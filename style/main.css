@@ -1,0 +1,114 @@
+body {
+  user-select: none;
+  background-color: #2e86c1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#content {
+
+  width: 100%;
+  padding-top: 50px;
+  height: 100vh;
+  padding: none;
+  margin: auto;
+  color: #e6f4f1;
+}
+
+#intro {
+    width: 800px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#intro h1 {
+    font-size: 40px;
+    color: #e6f4f1;
+    font-weight: bolder;
+}
+
+#intro p {
+    padding-right: 400px;
+}
+
+#intro img {
+    position: absolute;
+    width: 400px;
+    margin-left: 425px;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+/* top navbar style */
+
+#topNav {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #2e86c1;
+}
+
+#topNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#topNav li {
+  float: right;
+}
+
+#topNav li a {
+  display: block;
+  color: #e6f4f1;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#topNav li a:hover {
+  background-color: #111;
+}
+
+/* Change selected link style */
+
+#topNav li#selectedPage a {
+  color: white;
+  background-color: red;
+  font-weight: bolder;
+}
+
+/* name/logo */
+
+#topNav li#logo {
+  float: left;
+}
+
+#topNav li#logo a:hover {
+  color: red;
+}
+
+
+#topNav li#selectedPage a:hover {
+    color: #111;
+}
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: max-content;
+  color: #e6f4f1;
+  text-align: center;
+  background-color: #111;
+}
+
+footer a {
+    color: #c1692e;
+}
