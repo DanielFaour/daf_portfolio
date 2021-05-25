@@ -21,3 +21,27 @@
     margin-top: 50px;
     z-index: -1;
 }
+
+@media (max-width: 991px) {
+
+    #intro {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    #intro h1 {
+        font-size: 24px;
+    }
+
+    #intro p {
+        padding-right: 0;
+        font-size: 14px;
+    }
+
+    #intro img {
+        width: 300px;
+        position: relative;
+        display: flex;
+        margin: auto;
+    }
+}
