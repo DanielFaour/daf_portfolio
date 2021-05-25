@@ -1,9 +1,10 @@
 body {
   user-select: none;
-  background-color: white;
+  background-color: #e6f4f1;
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #background {
@@ -22,7 +23,6 @@ body {
 }
 
 #content {
-
   width: 100%;
   padding-top: 50px;
   height: 100vh;
@@ -31,86 +31,124 @@ body {
   color: #e6f4f1;
 }
 
-#intro {
-    width: 800px;
-    margin: auto;
-    margin-top: 150px;
-}
+/* navbar */
 
-#intro h1 {
-    font-size: 40px;
-    color: #e6f4f1;
-    font-weight: bolder;
-}
-
-#intro p {
-    padding-right: 400px;
-}
-
-#intro img {
-    position: absolute;
-    width: 400px;
-    margin-left: 425px;
-    margin-top: 50px;
-    z-index: -1;
-}
-
-/* top navbar style */
-
-#topNav {
+header {
   position: fixed;
-  top:0;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
   width: 100%;
-  background-color: #2e86c1;
+  background: #2e86c1;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 
-#topNav ul {
-  list-style-type: none;
+header .logo {
+  height: 50px;
+  margin: auto;
+  color: #fff;
+  font-size: 24px;
+  float: left;
+  text-align: center;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+header nav {
+  float: right;
+  
+}
+
+header nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-#topNav li {
+header nav ul li {
+  list-style: none;
   float: right;
 }
 
-#topNav li a {
-  display: block;
-  color: #e6f4f1;
-  text-align: center;
-  padding: 14px 25px;
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 20px;
+  color: #fff;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-#topNav li a:hover {
+nav li a:hover {
   background-color: #111;
 }
 
-/* Change selected link style */
-
-#topNav li#selectedPage a {
+nav li#selectedPage a {
   color: white;
   background-color: red;
   font-weight: bolder;
 }
 
-/* name/logo */
-
-#topNav li#logo {
-  float: left;
+nav li#selectedPage a:hover {
+  color: #111;
 }
 
-#topNav li#logo a:hover {
-  color: red;
+.menu_toggle {
+  color: #e6f4f1;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
 
+/* toggle menu */
 
-#topNav li#selectedPage a:hover {
-    color: #111;
+@media (max-width: 991px) {
+  header {
+    padding: 0 20px;
+    transition: 0.2s;
+  }
+
+  .menu_toggle {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #2e86c1;
+    top: 50px;
+    left: 0;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    display:unset;
+    transition: 0.2s;
+  }
+  
+  header nav ul {
+    display: block;
+  }
+  
+  header nav ul li {
+    float: none;
+    height: 100%;
+    display: flex;
+  }
+
+  header nav ul li a {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
 }
-
 
 /* footer */
 
@@ -125,5 +163,5 @@ footer {
 }
 
 footer a {
-    color: #c1692e;
+  color: #c1692e;
 }

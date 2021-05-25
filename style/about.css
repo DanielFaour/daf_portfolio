@@ -1,0 +1,23 @@
+#intro {
+    width: 800px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#intro h1 {
+    font-size: 40px;
+    color: #e6f4f1;
+    font-weight: bolder;
+}
+
+#intro p {
+    padding-right: 400px;
+}
+
+#intro img {
+    position: absolute;
+    width: 400px;
+    margin-left: 425px;
+    margin-top: 50px;
+    z-index: -1;
+}
