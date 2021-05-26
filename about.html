@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="initial-scale=1">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>About</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div id="background"></div>
 
-    <div id="background">
-        <div id="background_curve"></div>
-    </div>
     <header>
+      <a href="index.html">
         <div class="logo">Daniel Faour</div>
+      </a>
 
-        <nav>
-            <ul>
-                <li id="selectedPage"><a href="about.html">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li id="selectedPage"><a href="about.html">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
 
-        <div class="menu_toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+      <div class="menu_toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
     </header>
 
     <div id="content">
-        <div id="intro">
+      <div id="intro">
+        <img src="res/portrait_v3.png" alt="Image of ... " />
 
-            <img src="res/portrait.jpg" alt="Image of ... ">
+        <h1>
+          I am Daniel Faour, a computer science student at the Institute for
+          Informatics based in Oslo, Norway.
+        </h1>
 
-            <h1>I am Daniel Faour, a computer science student at the Institute for Informatics based in Oslo, Norway.
-            </h1>
+        <p>
+          <b>Informatics: Use, Design and Interaction </b> is the three-year
+          bachelor course I'm currently studying at the Institute for
+          Informatics, which is one of the newer departments by the University
+          of Oslo.
+        </p>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu augue maximus augue mattis
-                mattis at vitae diam. Aenean ut ultrices enim. Aenean non nunc scelerisque, volutpat arcu non, elementum
-                neque.
-            </p>
-            <p>
-                Aliquam in congue odio. Etiam sodales nisi sed massa egestas. Pellentesque varius est dictum sapien
-                sagittis, eu egestas urna rutrum. Quisque mollis ornare condimentum. Donec quis malesuada velit. Donec
-                lectus sem, pretium ac mauris id, pulvinar elementum orci. Donec eget sapien nec nisi tempor convallis.
-                Vivamus porttitor nulla id sollicitudin suscipit. Pellentesque lacinia volutpat efficitur. </p>
-            </p>
+        <p>
+          Since I was a young boy, I was always fond of technology and how it
+          revolved around me. Today I have evolved to be someone who loves
+          working with computers and cameras. Therefore one could say that
+          technology, computers and photography are some of my many interests!
+        </p>
+        <p>
+          As of now I work with smaller self-made projects on my own behalf for
+          having fun, such as building websites, creating applications, and
+          editing photos and videos.
+        </p>
 
+        <p>
+          When I'm not working on my studies or projects, I tend to do different
+          activities depending on the day. Meeting friends, excercise, and play
+          video games for instance.
+        </p>
+      </div>
 
-        </div>
-
-        <div id="introFlex">
-
-        </div>
-
-
+      <div class="imageGrid">
+        <h1>Here is a sample of my photography:</h1>
+        <div class="row">
+            <div class="column">
+              <img src="res/images/1.jpg">
+              <img src="res/images/2.jpg">
+            </div>
+            <div class="column">
+              <img src="res/images/3.jpg">
+              <img src="res/images/4.jpg">
+            </div>
+            <div class="column">
+              <img src="res/images/5.jpg">
+              <img src="res/images/6.jpg">
+            </div>
+          </div>
+      </div>
     </div>
 
     <!-- Source for enabling nav-switch -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="script/sticky_nav.js"></script>
     <script type="text/javascript">
-
-        $(document).ready(function() {
-
-            $('.menu_toggle').click(function(){
-                $('nav').toggleClass('active')
-            })
-        })
+      $(document).ready(function () {
+        $(".menu_toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+      });
     </script>
 
     <footer>
-        <p>
-            Daniel Faour
-            <br>
-            <a href="mailto:daniea1602@gmail.com">daniea1602@gmail.com</a>
-        </p>
-        <p>2021</p>
+      <p>
+        Daniel Faour
+        <br />
+        <a href="mailto:daniea1602@gmail.com">daniea1602@gmail.com</a>
+      </p>
+      <p>2021</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
