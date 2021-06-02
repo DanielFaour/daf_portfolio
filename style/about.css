@@ -1,7 +1,7 @@
 #background {
   background: linear-gradient(-160deg, #1b6494 60%, #2974a7 30%);
   position: absolute;
-  height: 850px;
+  height: 800px;
   width: 100%;
   top: -70px;
   z-index: -5;
@@ -10,23 +10,24 @@
 #intro {
   width: 800px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #intro h1 {
-  font-size: 40px;
+  font-size: 44px;
   color: #e6f4f1;
   font-weight: bolder;
 }
 
 #intro p {
+  font-size: 16px;
   padding-right: 400px;
 }
 
 #intro img {
   position: absolute;
   width: 400px;
-  margin-left: 425px;
+  margin-left: 400px;
   margin-top: 140px;
   z-index: -1;
 }
@@ -35,11 +36,29 @@
   width: 800px;
   margin: auto;
   margin-top: 150px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   align-items: center;
 }
 
-@media (max-width: 991px) {
+.row {
+  display: flex;
+}
+
+.column {
+  font-size: 0;
+}
+
+.column img {
+  width: 95%;
+  padding: 2.5%;
+}
+
+.imageGrid h1 {
+  text-align: center;
+}
+
+
+@media (max-width: 900px) {
   #background {
     height: 420px;
   }
@@ -51,7 +70,7 @@
 
   #intro h1 {
     margin-top: 50px;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   #intro p {
@@ -65,53 +84,15 @@
     display: flex;
     margin: auto;
   }
-}
 
-.row {
-  display: flex;
-  /* width: 133%; */
-  flex-wrap: wrap;
-  padding: 0 1px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 1px;
-}
-
-.column img {
-  margin-top: 16px;
-  vertical-align: middle;
-}
-
-.imageGrid img {
-    width: 250px;
-  }
-
-  .imageGrid h1 {
-    text-align: center;
-}
-
-@media (max-width: 991px) {
   .imageGrid {
-    width: 90%;
     margin-top: 40px;
-    margin-bottom: 30px;
+    width: 90%;
+    margin-bottom: 20px;
   }
 
   .imageGrid h1 {
-      text-align: center;
-      font-size: 20px;
+    font-size: 20px;
   }
 
-  .imageGrid img {
-    width: 200%;
-  }
-
-  .column {
-    flex: 60%;
-    max-width: 50%;
-  }
 }
