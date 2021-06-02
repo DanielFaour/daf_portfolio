@@ -70,7 +70,7 @@
 
   #intro h1 {
     margin-top: 50px;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   #intro p {
@@ -92,7 +92,7 @@
   }
 
   .imageGrid h1 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
 }
