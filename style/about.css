@@ -1,36 +1,103 @@
-#background {
-  background: linear-gradient(-160deg, #1b6494 60%, #2974a7 30%);
+/* #background {
+  background: linear-gradient(-90deg, black 50%, #111 50%);
   position: absolute;
-  height: 800px;
+  height: 100%;
   width: 100%;
-  top: -70px;
+  top: 0;
   z-index: -5;
-}
+} */
 
 #intro {
-  width: 800px;
-  margin: auto;
-  margin-top: 40px;
+  left: -10vw;
+  margin: 0;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  background: linear-gradient(-90deg, #111 50%, rgba(58, 58, 58, 1) 50%);
+  z-index: 0;
 }
 
-#intro h1 {
-  font-size: 44px;
-  color: #e6f4f1;
+#introBox1 {
+  position: absolute;
+  top: 10rem;
+  left: 25vw;
+}
+
+#introBox2 {
+  position: absolute;
+  top: 12vw;
+  right: 4vw;
+  width: 33%;
+  text-align: left;
+}
+
+#introText h1 {
+  font-size: calc(14px + 1.5vw);
+  color: #111;
   font-weight: bolder;
 }
 
-#intro p {
-  font-size: 16px;
-  padding-right: 400px;
+#introBox2 h2 {
+  text-align: justify;
+  font-size: calc(2px + 1.2vw);
+  color: white;
+  font-weight: bolder;
 }
 
-#intro img {
-  position: absolute;
+#introBox2 p {
+  text-align: justify;
+  font-size: calc(2px + .95vw);
+  color: white;
+  font-weight: lighter;
+}
+
+#introBox2 a {
+  color: rgba(234, 128, 154, 1);
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#introBox2 a:hover {
+  color: rgba(236, 184, 136, 1);
+}
+
+#introBox2 .button {
+  background-color: rgba(234, 128, 154, 1);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 100%;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+#introBox2 .button:hover {
+  background-color: rgba(236, 184, 136, 1);
+}
+
+
+
+#portrait {
+  /* position: absolute;
   width: 400px;
   margin-left: 400px;
-  margin-top: 140px;
+  margin-top: 140px; */
+  top:0;
+  display: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   z-index: -1;
 }
+
 
 .imageGrid {
   width: 800px;
@@ -38,6 +105,11 @@
   margin-top: 150px;
   margin-bottom: 50px;
   align-items: center;
+}
+
+.imageGrid h1 {
+  color: white;
+
 }
 
 .row {
@@ -58,25 +130,41 @@
 }
 
 
-@media (max-width: 900px) {
-  #background {
-    height: 420px;
+@media (max-width: 1000px) {
+  #introBox1 {
+    position: absolute;
+    top: 5rem;
+    left: 10vw;
   }
 
-  #intro {
-    width: 90%;
-    margin-top: 0;
+  #introBox2 {
+    position: relative;
+    top: 20px;
+    right: 0;
+    width: calc(20vh + 50vw);
+    margin: auto;
+    text-align: left;
   }
 
-  #intro h1 {
-    margin-top: 50px;
-    font-size: 24px;
-  }
+  #introText h1 {
+  font-size: calc(12px + 1.5vw);
+  color: #111;
+  font-weight: bolder;
+}
 
-  #intro p {
-    padding-right: 0;
-    font-size: 14px;
-  }
+#introBox2 h2 {
+  text-align: justify;
+  font-size: calc(10px + 1.2vw);
+  color: white;
+  font-weight: bolder;
+}
+
+#introBox2 p {
+  text-align: justify;
+  font-size: calc(10px + .95vw);
+  color: white;
+  font-weight: lighter;
+}
 
   #intro img {
     width: 270px;

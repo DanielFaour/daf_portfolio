@@ -8,27 +8,26 @@
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/about.css" />
     <link
-
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet"> 
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>About</title>
   </head>
 
   <body>
-    <div id="background"></div>
 
     <header>
-      <a href="index.html">
-        <div class="logo">Daniel Faour</div>
-      </a>
+      <a href="about.html"> Daniel Faour </a>
 
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#work">Work</a></li>
-          <li id="selectedPage"><a href="about.html">About</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li id="selectedPage"><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
 
@@ -39,51 +38,55 @@
 
     <div id="content">
       <div id="intro">
-        <img src="res/portrait_me.png" alt="Image of ... " />
+        <img id="portrait" src="res/bnw-greensuit.png" alt="Image of ... " />
+        <div id="introBox1">
+          <div id="introText"> 
+            <h1>
+              Daniel<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faour.
+            </h1>
+          </div>
+        </div>
 
-        <h1>
-          I am Daniel Faour, a computer science student at the Institute for
-          Informatics based in Oslo, Norway.
-        </h1>
+      </div>
+        <div id="introBox2">
+          <h2>
+            Master's student at the University in Oslo with main focus in UX-design and web development.
+          </h2>
+          <p>
+            I am currently pursuing a master's degree in <b> Informatics: Design, Use, and Interaction </b> 
+            at the Institute for Informatics, part of the University of Oslo's newer departments.
+            <br><br>
+            Ever since I was a young boy, I have been captivated by technology and its impact on the world around me. Over the years, I have grown into someone who thoroughly enjoys working with computers. You could say that technology, computers, and photography are among my many passions!
+          </p>
+          <p>
+            Currently, I'm actively engaged in various personal projects that bring me joy. These include website development, app creation, as well as photo and video editing. And of course being the leader of a big student organization named <a href="http://defi.no/">DEFI</a>.  We
+            host social events and meaningful educational courses relevant to my particular study.
+          </p>
 
-        <p>
-          <b>Informatics: Use, Design and Interaction </b> is the three-year
-          bachelor course I'm currently studying at the Institute for
-          Informatics, which is one of the newer departments by the University
-          of Oslo.
-        </p>
+          <p>
+            Outside of my academic pursuits and personal projects, I have a diverse range of activities that keep me busy. On any given day, you might find me exercising, immersing myself in video games, spending time with friends, or pursuing my love for photography.
+          </p>
 
-        <p>
-          Since I was a young boy, I was always fond of technology and how it
-          revolved around me. Today I have evolved to be someone who loves
-          working with computers. Therefore one could say that
-          technology, computers and photography are some of my many interests!
-        </p>
-        <p>
-          As of now I work with smaller self-made projects on my own behalf to have fun, such as building websites, creating applications, and
-          editing photos and videos.
-        </p>
+          <button class="button">Hire me!</button>
+        </div>
 
-        <p>
-          When I'm not working on my studies or projects, I tend to do different
-          activities depending on the day. Excercise, play video games, hang out with friends,
-          and photography for instance.
-        </p>
+        <div id="introBox3">
       </div>
 
       <div class="imageGrid">
         <h1>Here is a sample of my photography:</h1>
         <div class="row">
-            <div class="column">
-              <img src="res/images/1.jpg"><img src="res/images/2.jpg">
-            </div>
-            <div class="column">
-              <img src="res/images/3.jpg"><img src="res/images/4.jpg">
-            </div>
-            <div class="column">
-              <img src="res/images/7.jpg"><img src="res/images/6.jpg">
-            </div>
+          <div class="column">
+            <img src="res/images/1.jpg" /><img src="res/images/2.jpg" />
           </div>
+          <div class="column">
+            <img src="res/images/3.jpg" /><img src="res/images/4.jpg" />
+          </div>
+          <div class="column">
+            <img src="res/images/7.jpg" /><img src="res/images/6.jpg" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -100,9 +103,10 @@
 
     <footer>
       <p>
-        Want to work together? <a href="mailto:daniea1602@gmail.com">Send me an  e-mail!</a>
-        <br><br>
-        Last updated 2021
+        Want to work together?
+        <a href="mailto:daniea1602@gmail.com">Send me an e-mail!</a>
+        <br /><br />
+        Last updated 2023
       </p>
     </footer>
   </body>
