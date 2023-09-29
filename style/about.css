@@ -17,12 +17,70 @@
   color: white;
   background: linear-gradient(-90deg, #111 50%, rgba(58, 58, 58, 1) 50%);
   z-index: 0;
+  font-size: 0;
+}
+
+#intro img {
+  display: block;
+  font-size: 0;
+
+}
+
+#midContent {
+  top: calc(5px + 2vh);
+  margin: 0;
+  padding-top:10px;
+  height: max-content;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  background: none;
+  z-index: 0;
+}
+
+#midContent p {
+  font-size: 16px;
+}
+
+/* #midContent h1 {
+  
+}
+
+#midContent h2 {
+  
+} */
+
+#projectBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.projectElement {
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  background-color: rgba(58, 58, 58, 1);
+  margin: 5px;
+}
+
+.projectElement p {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.projectElement img {
+  width: 90%;
 }
 
 #introBox1 {
   position: absolute;
-  top: 10rem;
-  left: 25vw;
+  top: 13vw;
+  left: 18vw;
 }
 
 #introBox2 {
@@ -34,7 +92,7 @@
 }
 
 #introText h1 {
-  font-size: calc(14px + 1.5vw);
+  font-size: calc(2px + 4vw);
   color: #111;
   font-weight: bolder;
 }
@@ -67,34 +125,29 @@
 #introBox2 .button {
   background-color: rgba(234, 128, 154, 1);
   border: none;
-  color: white;
+  color: rgba(58, 58, 58, 1);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  margin: auto 0;
+  font-size: 18px;
   width: 100%;
   cursor: pointer;
-  cursor: pointer;
+  font-weight: bold;
 }
 
 #introBox2 .button:hover {
   background-color: rgba(236, 184, 136, 1);
 }
 
-
-
 #portrait {
-  /* position: absolute;
-  width: 400px;
-  margin-left: 400px;
-  margin-top: 140px; */
   top:0;
   display: relative;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  min-height: 100%;
   z-index: -1;
 }
 
@@ -102,7 +155,7 @@
 .imageGrid {
   width: 800px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 50px;
   align-items: center;
 }
@@ -131,17 +184,22 @@
 
 
 @media (max-width: 1000px) {
+  #midContent {
+    top: calc(25px + 2vh);
+  }
+  
   #introBox1 {
     position: absolute;
-    top: 5rem;
-    left: 10vw;
+    top: 5.5rem;
+    left: 12vw;
   }
 
   #introBox2 {
+    margin: auto;
     position: relative;
     top: 20px;
     right: 0;
-    width: calc(20vh + 50vw);
+    width: calc(20vh + 52vw);
     margin: auto;
     text-align: left;
   }
@@ -174,7 +232,8 @@
   }
 
   .imageGrid {
-    margin-top: 40px;
+    text-align: center;
+    margin-top: 50px;
     width: 90%;
     margin-bottom: 20px;
   }
