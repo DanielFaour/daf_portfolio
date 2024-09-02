@@ -191,7 +191,7 @@
   }
 
   #intro h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .tile-grid {
@@ -199,11 +199,11 @@
   }
   
   .tile {
-    max-width: 80%;
+    max-width: 85vw;
   }
   
   #skillBox {
-    width: 90%;
+    width: 85vw;
   }
 }
 
