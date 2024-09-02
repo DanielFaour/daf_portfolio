@@ -89,7 +89,7 @@
 #sectionSkills {
   background-color: #111;
   margin: 0;
-  padding: 30px;
+  padding-top: 30px;
 }
 
 #sectionSkills h1 {
@@ -108,6 +108,7 @@
   margin: auto;
   margin-top: 20px;
   border-radius: 25px;
+  box-sizing: border-box;
 }
 
 /* Section Styling */
@@ -140,8 +141,8 @@
 
 /* Tile Styling */
 .tile {
-  min-height: 800px;
-  max-height: 1000px;
+  min-height: 600px;
+  max-height: fit-content;
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
@@ -152,6 +153,7 @@
   filter: grayscale(1);
   transform: translateY(50px) rotate(-5deg);
   border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .tile h2 {
@@ -160,6 +162,7 @@
 
 .tile img {
   width: 100%;
+  border-radius: 15px;
 }
 
 /* Tile Animation when in view */
@@ -192,16 +195,15 @@
   }
 
   .tile-grid {
-    grid-template-columns: 0.5fr; /* Single column layout on smaller screens */
-    
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
   }
   
   .tile {
     max-width: 80%;
   }
-
+  
   #skillBox {
-    max-width: 95%;
+    width: 90%;
   }
 }
 
