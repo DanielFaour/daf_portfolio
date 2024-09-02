@@ -118,8 +118,8 @@
   padding-top: 10px;
   margin: auto;
   color: #e6f4f1;
-  background-color: #111;
   overflow: hidden;
+  background-color: #111;
 }
 
 #sectionWork h1 {
@@ -137,8 +137,8 @@
   row-gap: 40px;
   padding-top: 10px;
   padding-bottom: 30px;
-  justify-items: center;
   overflow: hidden;
+  justify-items: center;
 }
 
 /* Tile Styling */
