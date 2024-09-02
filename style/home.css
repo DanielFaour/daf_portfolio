@@ -1,0 +1,221 @@
+/* General Page Styling */
+#content {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  color: #e6f4f1;
+  background-color: black;
+}
+
+/* Introduction Section Styling */
+#intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+#introduction {
+  padding: 10px;
+  order: 1; /* Default order */
+}
+
+#portrait {
+  max-height: 70vh;
+  max-width: 40%;
+  filter: grayscale(0.2);
+  order: 2; /* Default order */
+}
+
+#intro h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+#intro h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#intro h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#intro .button {
+  background-color: rgba(234, 128, 154, 1);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#intro .button:hover {
+  background-color: rgba(236, 184, 136, 1);
+}
+
+#intro .button:active {
+  background-color: rgb(192, 139, 90);
+}
+
+#icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.icon {
+  filter:invert(1);
+}
+
+.icon img {
+  width: 40px;
+}
+
+.icon img:hover {
+  filter: opacity(0.5);
+}
+
+#sectionSkills {
+  background-color: #111;
+  margin: 0;
+  padding: 30px;
+}
+
+#sectionSkills h1 {
+  margin: 0;
+  text-align: center;
+  align-content: center;
+}
+
+#skillBox {
+  background-color: black;
+  width: 70%;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+/* Section Styling */
+#sectionWork {
+  max-width: 100%;
+  min-height: max-content;
+  padding-top: 10px;
+  margin: auto;
+  color: #e6f4f1;
+  background-color: #111;
+}
+
+#sectionWork h1 {
+  text-align: center;
+}
+
+/* Grid Container for Tiles */
+.workGrid {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 0.5fr));
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 40px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  justify-items: center;
+}
+
+/* Tile Styling */
+.tile {
+  min-height: 800px;
+  max-height: 1000px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: black;
+  opacity: 0;
+  overflow: auto;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  filter: grayscale(1);
+  transform: translateY(50px) rotate(-5deg);
+  border-radius: 25px;
+}
+
+.tile h2 {
+  text-align: center;
+}
+
+.tile img {
+  width: 100%;
+}
+
+/* Tile Animation when in view */
+.tile.inView {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  #intro {
+    max-width: 95%;
+  }
+  
+  #introduction {
+    order: 1;
+    margin-top: 60px;
+  }
+  
+  #portrait {
+    order: 2;
+    max-height: 60vh;
+    max-width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #intro h1 {
+    font-size: 60px;
+  }
+
+  .tile-grid {
+    grid-template-columns: 0.5fr; /* Single column layout on smaller screens */
+    
+  }
+  
+  .tile {
+    max-width: 80%;
+  }
+
+  #skillBox {
+    max-width: 95%;
+  }
+}
+
+#portrait {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

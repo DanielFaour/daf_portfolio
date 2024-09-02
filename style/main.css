@@ -1,6 +1,6 @@
 body {
   user-select: none;
-  background-color: #111;
+  background-color: white;
   margin: 0;
   padding: 0;
   font-family: 'Abel', sans-serif;
@@ -8,32 +8,6 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
-
-.content {
-  width: 100%;
-  padding-top: 50px;
-  min-height: 100vh;
-  max-height: fit-content;
-  padding: none;
-  margin: auto;
-  color: #e6f4f1;
-}
-
-#imgMain {
-  width: 100%;
-  padding-top: 50px;
-  min-height: 100vh;
-  max-height: fit-content;
-  padding: none;
-  margin: auto;
-  color: #e6f4f1;
-}
-
-#descriptionMain {
-  background-color: #111;
-  height: 800px;
-}
-/* navbar */
 
 header {
   position: fixed;
@@ -62,19 +36,10 @@ header nav ul li {
   float: left;
 }
 
-/* each item in nav */
-/* header nav ul li a {
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-  padding: 20px;
-  color: black;
-} */
-
 header a {
   height: 50px;
-  line-height: 60px;
-  font-size: 16px;
+  line-height: 50px;
+  font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
   padding-bottom: 5px;
@@ -129,7 +94,7 @@ nav li#selectedPage a::before {
 } */
 
 .sticky {
-  background: rgba(0, 0, 0, 0.4);
+  background: #111;;
 }
 
 .menu_toggle {
@@ -147,6 +112,7 @@ nav li#selectedPage a::before {
   header {
     padding: 0 20px;
     transition: 0.2s;
+    background: #111;
   }
 
   .menu_toggle {
@@ -157,11 +123,11 @@ nav li#selectedPage a::before {
     display: none;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
     background: #111;
     top: 50px;
     left: 0;
-    transition: 0.5s;
+    transition: 0.2s;
   
   }
 
@@ -193,7 +159,7 @@ nav li#selectedPage a::before {
   }
 
   footer {
-    font-size: calc(8px + .95vw);
+    font-size: calc(10px + .95vw);
   }
 
 }
@@ -207,8 +173,9 @@ footer {
   height: max-content;
   color: #e6f4f1;
   text-align: center;
-  background-color: rgba(58, 58, 58, 1);
+  background: black;
   bottom: 0;
+  font-size: 16px;
 }
 
 footer a {
