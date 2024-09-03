@@ -45,7 +45,7 @@
   margin: 0;
 }
 
-#intro .button {
+.buttonPink {
   background-color: rgba(234, 128, 154, 1);
   border: none;
   color: black;
@@ -57,11 +57,11 @@
   cursor: pointer;
 }
 
-#intro .button:hover {
+.buttonPink:hover {
   background-color: rgba(236, 184, 136, 1);
 }
 
-#intro .button:active {
+.buttonPink:active {
   background-color: rgb(192, 139, 90);
 }
 
@@ -101,14 +101,38 @@
 #skillBox {
   background-color: black;
   width: 70%;
-  padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  min-height: 200px;
+  height: max-content;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: auto;
   margin-top: 20px;
   border-radius: 25px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skillBtn {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(234, 128, 154, 1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.skillBtn img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Maintain aspect ratio */
+  margin-right: 10px;
+  filter: invert(1);
+}
+
+.skillBtn span {
+  font-size: 18px;
+  color: white;
 }
 
 /* Section Styling */
@@ -131,7 +155,7 @@
   width: 70%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 0.5fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
   justify-content: center;
   column-gap: 100px;
   row-gap: 40px;
@@ -147,11 +171,11 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 55px;
   background: black;
   opacity: 0;
   overflow: auto;
   transition: opacity 0.4s ease, transform 0.4s ease;
-  filter: grayscale(1);
   transform: translateY(50px) rotate(-5deg);
   border-radius: 25px;
   box-sizing: border-box;
@@ -161,9 +185,21 @@
   text-align: center;
 }
 
+.tile p {
+  font-size: 16px;
+}
+
 .tile img {
   width: 100%;
   border-radius: 15px;
+  background-color: #111;
+}
+
+.tile .buttonPink {
+  border-radius: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Tile Animation when in view */
@@ -200,16 +236,16 @@
   }
   
   .tile {
-    max-width: 85vw;
+    max-width: 93vw;
   }
   
   #skillBox {
-    width: 85vw;
+    width: 93vw;
   }
 }
 
-#portrait {
-  animation: fadeInAnimation ease 3s;
+#intro {
+  animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
