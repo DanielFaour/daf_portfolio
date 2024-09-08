@@ -3,6 +3,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  font-family: 'Abel', sans-serif;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -10,7 +11,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 
 header {
   position: fixed;
