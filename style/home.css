@@ -160,7 +160,7 @@
 .workGrid {
   width: 80%;
   margin: auto;
-  column-count: 3; /* Number of columns */
+  column-count: 4; /* Number of columns */
   column-gap: 50px; /* Gap between the columns */
   padding-top: 10px;
   padding-bottom: 30px;
@@ -192,15 +192,8 @@
 }
 
 .tile h2 {
-  padding-bottom: 10px;
+  padding-top: 15px;
   font-weight: 300;
-  text-align: center;
-  margin: 0;
-}
-
-.tile h3 {
-  padding-bottom: 10px;
-  font-weight: 100;
   text-align: center;
   margin: 0;
 }
@@ -296,6 +289,11 @@
   }
 }
 
+@media (max-width: 2800px) {
+  .workGrid {
+    column-count: 3; /* Number of columns */
+  }
+}
 
 @media (max-width: 1800px) {
   .workGrid {
