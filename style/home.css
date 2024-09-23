@@ -272,6 +272,11 @@
   #skillBox {
     width: 80vw;
   }
+
+  .tile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 #intro {
