@@ -28,6 +28,7 @@
   max-width: 40%;
   filter: grayscale(0.2);
   order: 2; /* Default order */
+  pointer-events: none;
 }
 
 #intro h1 {
@@ -217,6 +218,7 @@
   width: 100%;
   border-radius: 15px;
   background-color: #111;
+  pointer-events: none;
 }
 
 /* .tile .buttonPink {
