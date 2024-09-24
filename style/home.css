@@ -173,8 +173,8 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  
-  padding-bottom: 55px;
+  padding-bottom: 30px;
+  /* padding-bottom: 55px; */
   background: black;
   opacity: 0;
   overflow: auto;
@@ -219,12 +219,20 @@
   background-color: #111;
 }
 
-.tile .buttonPink {
+/* .tile .buttonPink {
   border-radius: 0;
   position: absolute;
   bottom: 0;
   right: 0;
+} */
+
+.tile .buttonPink {
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 100%;
+  display: block; 
 }
+
 
 /* Tile Animation when in view */
 .tile.inView {
@@ -277,6 +285,7 @@
   .tile {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
   }
 }
 
