@@ -289,6 +289,8 @@
     padding-right: 15px;
     padding-bottom: 15px;
   }
+
+  
 }
 
 #intro {
@@ -331,5 +333,14 @@
   
   #skillBox {
     width: 93vw;
+  }
+
+  #skillBox {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .skillBtn {
+    width: 100%;
   }
 }
