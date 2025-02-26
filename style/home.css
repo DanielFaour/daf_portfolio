@@ -119,8 +119,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center;
-  
+  justify-content: center; /* Center items */
 }
 
 .skillBtn {
@@ -129,7 +128,11 @@
   border: 2px solid rgba(234, 128, 154, 1);
   border-radius: 5px;
   padding: 10px;
-  
+  width: max-content; /* First ones are width max-content */
+  max-width: 100%; /* Prevents last line elements from becoming too wide */
+  flex: 1 1 100px; /* Fill up the rest and set a minimum width */
+  box-sizing: border-box;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .skillBtn img {
@@ -164,7 +167,7 @@
   width: 80%;
   margin: auto;
   column-count: 4; /* Number of columns */
-  column-gap: 50px; /* Gap between the columns */
+  column-gap: 25px; /* Gap between the columns */
   padding-top: 10px;
   padding-bottom: 30px;
 }
@@ -175,7 +178,7 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   /* padding-bottom: 55px; */
   background: black;
   opacity: 0;
@@ -184,7 +187,7 @@
   transform: translateY(50px) rotate(-5deg);
   border-radius: 25px;
   box-sizing: border-box;
-  margin-bottom: 40px; /* Adds spacing between items */
+  margin-bottom: 25px; /* Adds spacing between items */
 }
 
 .tile h1 {
@@ -219,7 +222,8 @@
   font-size: 16px;
   word-break: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  text-align: justify;
+  /* text-align-last: left; */
 }
 
 .tile img {
@@ -240,7 +244,8 @@
   margin: 0 auto;
   border-radius: 15px;
   width: 100%;
-  display: block; 
+  display: block;
+  margin-bottom: 15px;
 }
 
 
