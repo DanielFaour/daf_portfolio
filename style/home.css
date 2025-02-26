@@ -356,4 +356,8 @@
   .skillBtn {
     width: 100%;
   }
+  .tile .buttonPink {
+    margin-bottom: 0px;
+  }
+  
 }
