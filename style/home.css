@@ -405,6 +405,12 @@
 
   .skillBtn {
     width: 100%;
+    padding: 8px;
+  }
+  .skillBtn img {
+    scale: 1;
+    width: 20px;
+    height: 20px;
   }
 
   .skillBtn span {
