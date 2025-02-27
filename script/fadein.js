@@ -5,10 +5,8 @@ function fadeIn() {
     for (var i = 0; i < elementsArray.length; i++) {
         var elem = elementsArray[i]
         var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-        if (distInView < 0) {
+        if (distInView < 0 && !elem.classList.contains("inView")) {
             elem.classList.add("inView");
-        } else {
-            elem.classList.remove("inView");
         }
     }
 }

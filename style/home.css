@@ -92,6 +92,34 @@
   cursor: pointer;
 }
 
+#sectionBio {
+  background-color: #111;
+  margin: 0;
+  padding-top: 30px;
+}
+
+#sectionBio h1 {
+  margin: 0;
+  text-align: center;
+  align-content: center;
+}
+
+#bioBox {
+  background-color: black;
+  width:60vw;
+  max-width: 850px;
+  height: max-content;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-align: justify;
+  line-height: 1.5;
+}
+
 #sectionSkills {
   background-color: #111;
   margin: 0;
@@ -106,7 +134,8 @@
 
 #skillBox {
   background-color: black;
-  width: 80%;
+  width:60vw;
+  max-width: 850px;
   height: max-content;
   padding: 30px;
   padding-left: 40px;
@@ -120,6 +149,11 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center; /* Center items */
+}
+
+#skillBox h1 {
+  width: 100%;
+  text-align: center;
 }
 
 .skillBtn {
@@ -223,7 +257,8 @@
   word-break: break-word;
   overflow-wrap: break-word;
   text-align: justify;
-  /* text-align-last: left; */
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .tile img {
@@ -297,6 +332,10 @@
     width: 80vw;
   }
 
+  #bioBox {
+    width: 80vw;
+  }
+
   .tile {
     padding-left: 15px;
     padding-right: 15px;
@@ -330,6 +369,7 @@
 @media (max-width: 1800px) {
   .workGrid {
     column-count: 2; /* Number of columns */
+    width: 93vw;
   }
 }
 
@@ -346,6 +386,18 @@
   
   #skillBox {
     width: 93vw;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #bioBox {
+    width: 93vw;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #bioBox p {
+    text-align: justify;
+    margin: 0;
   }
 
   #skillBox {
@@ -356,6 +408,11 @@
   .skillBtn {
     width: 100%;
   }
+
+  .skillBtn span {
+    font-size: 12px;
+  }
+
   .tile .buttonPink {
     margin-bottom: 0px;
   }
