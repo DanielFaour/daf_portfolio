@@ -80,7 +80,7 @@
 }
 
 .icon {
-  filter:invert(1);
+  filter: invert(1);
 }
 
 .icon img {
@@ -106,7 +106,7 @@
 
 #bioBox {
   background-color: black;
-  width:60vw;
+  width: 60vw;
   max-width: 850px;
   height: max-content;
   padding: 30px;
@@ -134,7 +134,7 @@
 
 #skillBox {
   background-color: black;
-  width:60vw;
+  width: 60vw;
   max-width: 850px;
   height: max-content;
   padding: 30px;
@@ -283,7 +283,6 @@
   margin-bottom: 15px;
 }
 
-
 /* Tile Animation when in view */
 .tile.inView {
   opacity: 1;
@@ -296,12 +295,12 @@
     max-width: 95%;
     padding-top: 40px;
   }
-  
+
   #introduction {
     order: 1;
     margin-top: 60px;
   }
-  
+
   #portrait {
     order: 2;
     max-height: 60vh;
@@ -323,11 +322,11 @@
   .tile-grid {
     grid-template-columns: 1fr; /* Single column layout on smaller screens */
   }
-  
+
   .workGrid {
     width: 80vw;
   }
-  
+
   #skillBox {
     width: 80vw;
   }
@@ -341,8 +340,6 @@
     padding-right: 15px;
     padding-bottom: 15px;
   }
-
-  
 }
 
 #intro {
@@ -383,7 +380,7 @@
   .workGrid {
     width: 93vw;
   }
-  
+
   #skillBox {
     width: 93vw;
     padding-left: 15px;
@@ -394,7 +391,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   #bioBox p {
     text-align: justify;
     margin: 0;
@@ -416,5 +413,4 @@
   .tile .buttonPink {
     margin-bottom: 0px;
   }
-  
 }
