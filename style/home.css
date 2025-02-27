@@ -154,6 +154,7 @@
 #skillBox h1 {
   width: 100%;
   text-align: center;
+  margin: 5px;
 }
 
 .skillBtn {
@@ -385,11 +386,15 @@
     width: 93vw;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
   }
   #bioBox {
     width: 93vw;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    padding-top: 15px;
   }
 
   #bioBox p {
@@ -418,6 +423,10 @@
   }
 
   .tile .buttonPink {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  .tile {
+    padding-bottom: 10px;
   }
 }
