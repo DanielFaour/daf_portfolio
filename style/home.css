@@ -395,6 +395,7 @@
   #bioBox p {
     text-align: justify;
     margin: 0;
+    margin-top: 10px;
   }
 
   #skillBox {
