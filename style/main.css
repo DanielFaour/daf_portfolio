@@ -11,6 +11,27 @@ body {
   font-style: normal;
 }
 
+
+#flag {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#flag1 {
+  width: 15px;
+  height: 5px;
+  background-color: rgb(0, 87, 183);
+}
+
+#flag2 {
+  width: 15px;
+  height: 5px;
+  background-color: rgb(255, 215, 0);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -43,7 +64,7 @@ header a {
   line-height: 50px;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 10px;
   padding-bottom: 5px;
   position: relative;
   color: rgba(234, 128, 154, 1);
