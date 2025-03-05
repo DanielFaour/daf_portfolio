@@ -75,7 +75,7 @@ header a {
 /* makes underline under elements in nav */
 
 header a:hover {
-  color: white;
+  color: #dfdfdf;
 }
 
 header a::before {
@@ -86,7 +86,7 @@ header a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: #dfdfdf;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -97,7 +97,7 @@ header a:hover::before {
 
 /* selected page element */
 nav li#selectedPage a {
-  color: white;
+  color: #dfdfdf;
 }
 
 nav li#selectedPage a::before {
@@ -105,7 +105,7 @@ nav li#selectedPage a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: #dfdfdf;
   transform: scaleX(1);
   transition: transform 0.3s ease;
 }
@@ -121,7 +121,7 @@ nav li#selectedPage a::before {
 }
 
 .menu_toggle {
-  color: #e6f4f1;
+  color: #dfdfdf;
   float: right;
   line-height: 50px;
   font-size: 24px;
@@ -194,7 +194,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   height: max-content;
-  color: #e6f4f1;
+  color: #dfdfdf;
   text-align: center;
   background-color: black;
   bottom: 0;
