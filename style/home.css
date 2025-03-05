@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   margin: auto;
-  color: #e6f4f1;
+  color: #dfdfdf;
   background-color: black;
 }
 
@@ -181,7 +181,7 @@
 
 .skillBtn span {
   font-size: 18px;
-  color: white;
+  color: #dfdfdf;
 }
 
 /* Section Styling */
@@ -190,7 +190,7 @@
   min-height: max-content;
   padding-top: 10px;
   margin: auto;
-  color: #e6f4f1;
+  color: #dfdfdf;
   overflow: hidden;
   background-color: #111;
 }
