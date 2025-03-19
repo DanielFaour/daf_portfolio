@@ -7,6 +7,18 @@
   background-color: black;
 }
 
+p {
+  font-size: 18px;
+  font-size: 18px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: justify;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  margin-bottom: 15px;
+}
+
 /* Introduction Section Styling */
 #intro {
   display: flex;
@@ -19,7 +31,6 @@
 }
 
 #introduction {
-  padding: 10px;
   order: 1; /* Default order */
 }
 
@@ -42,7 +53,7 @@
 }
 
 #intro h3 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -93,7 +104,7 @@
 }
 
 #sectionBio {
-  background-color: #111;
+  background-color: #1C1C1C;
   margin: 0;
   padding-top: 30px;
 }
@@ -106,8 +117,8 @@
 
 #bioBox {
   background-color: black;
-  width: 60vw;
-  max-width: 850px;
+  width: 65vw;
+  max-width: 800px;
   height: max-content;
   padding: 30px;
   padding-left: 40px;
@@ -123,7 +134,7 @@
 }
 
 #sectionSkills {
-  background-color: #111;
+  background-color: #1C1C1C;
   margin: 0;
   padding-top: 30px;
 }
@@ -136,8 +147,8 @@
 
 #skillBox {
   background-color: black;
-  width: 60vw;
-  max-width: 850px;
+  width: 65vw;
+  max-width: 800px;
   height: max-content;
   padding: 30px;
   padding-left: 40px;
@@ -192,7 +203,7 @@
   margin: auto;
   color: #dfdfdf;
   overflow: hidden;
-  background-color: #111;
+  background-color: #1C1C1C;
 }
 
 #sectionWork h1 {
@@ -212,9 +223,9 @@
 .tile {
   display: inline-block; /* Allow tiles to flow naturally in columns */
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
   /* padding-bottom: 55px; */
   background: black;
   opacity: 0;
@@ -248,21 +259,10 @@
 }
 
 .tile .grade {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   margin: 0;
-}
-
-.tile p {
-  font-size: 16px;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  text-align: justify;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  margin-bottom: 15px;
 }
 
 .tile img {
@@ -293,6 +293,13 @@
   transform: translateY(0) rotate(0);
 }
 
+.tile:hover {
+  transform: scale(1.02);
+  outline: 3px solid rgba(234, 128, 154, 1);
+  transition: transform 40ms ease-in-out, outline 100ms ease-in-out;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 900px) {
   #intro {
@@ -307,7 +314,7 @@
 
   #portrait {
     order: 2;
-    max-height: 60vh;
+    max-height: 50vw;
     max-width: 95%;
     margin: auto;
     text-align: center;
@@ -370,19 +377,23 @@
 @media (max-width: 1800px) {
   .workGrid {
     column-count: 2; /* Number of columns */
+    column-gap: 20px; /* Gap between the columns */
     width: 95vw;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 650px) {
+  #portrait {
+    order: 2;
+    max-height: 75vw;
+    max-width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+
   .workGrid {
+    width: 95vw;
     column-count: 1; /* Number of columns */
-  }
-}
-
-@media (max-width: 600px) {
-  .workGrid {
-    width: 95vw;
   }
 
   #skillBox {
@@ -398,6 +409,7 @@
     padding-bottom: 15px;
     border-radius: 10px;
     padding-top: 15px;
+    margin-top: 0;
   }
 
   #bioBox p {
@@ -408,6 +420,7 @@
   #skillBox {
     padding: 15px;
     border-radius: 10px;
+    margin-top: 0;
   }
 
   .skillBtn {
@@ -430,5 +443,6 @@
 
   .tile {
     padding-bottom: 5px;
+    margin-bottom: 15px;
   }
 }

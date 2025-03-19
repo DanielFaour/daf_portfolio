@@ -135,7 +135,7 @@ nav li#selectedPage a::before {
   header {
     padding: 0 20px;
     transition: 0.2s;
-    background: #111;
+    background: #1C1C1C;
   }
 
   .menu_toggle {
@@ -147,7 +147,7 @@ nav li#selectedPage a::before {
     position: absolute;
     width: 100%;
     /* height: calc(100vh - 50px); */
-    background: #111;
+    background: #1C1C1C;
     top: 50px;
     left: 0;
     transition: 0.2s;
@@ -198,6 +198,10 @@ footer {
   text-align: center;
   background-color: black;
   bottom: 0;
+}
+
+footer p {
+  text-align: center;
   font-size: 16px;
 }
 
