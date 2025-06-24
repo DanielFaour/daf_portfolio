@@ -110,7 +110,7 @@ p {
 }
 
 #sectionBio h1 {
-  margin: 0;
+  margin-top: 0;
   text-align: center;
   align-content: center;
 }
@@ -140,7 +140,7 @@ p {
 }
 
 #sectionSkills h1 {
-  margin: 0;
+  margin-top: 0;
   text-align: center;
   align-content: center;
 }
