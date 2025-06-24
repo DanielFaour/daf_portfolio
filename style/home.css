@@ -121,8 +121,8 @@ p {
   max-width: 800px;
   height: max-content;
   padding: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   margin: auto;
   margin-top: 20px;
   border-radius: 25px;
@@ -131,6 +131,10 @@ p {
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+}
+
+#bioBox p {
+  margin: 0;
 }
 
 #sectionSkills {
@@ -151,8 +155,8 @@ p {
   max-width: 800px;
   height: max-content;
   padding: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   margin: auto;
   margin-top: 20px;
   border-radius: 25px;
