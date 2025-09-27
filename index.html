@@ -53,13 +53,18 @@
           <h2>Hello there! My name is</h2>
           <h1>Daniel Faour.</h1>
           <h3>I'm a UX-designer and developer.</h3>
-          <br />
-          <button
-            class="buttonPink"
-            onclick="location.href='mailto:daniea1602@gmail.com';"
-          >
-            Get in touch!
-          </button>
+            <br />
+            <div style="display: flex; justify-content: center;">
+            <button
+              class="buttonPink"
+              id="contactBtn"
+              onclick="location.href='mailto:daniea1602@gmail.com';"
+              style="align-items: center; gap: 8px;"
+            >
+              <i class="fa fa-envelope" style="color: #000;"></i>
+               Get in touch!
+            </button>
+            </div>
           <div id="icons">
             <a
               class="icon"
@@ -90,33 +95,15 @@
         <h1>About me</h1>
         <div id="bioBox">
           <p>
-            I am a newly graduated master’s student in Informatics at the
-            University of Oslo, specializing in Human-Computer Interaction. I
-            have a passion for creating engaging and meaningful experiences
-            through design and technology. My background in computer science and
-            design has given me a unique opportunity to combine the two
-            perspectives to create innovative solutions. I am currently looking
-            for new challenges and opportunities to learn and grow as a designer
-            and developer.
+            I have a master's degree in Informatics from the University of Oslo, specializing in UX design and development. My background in computer science and design allows me to create engaging and meaningful experiences through technology. I am seeking new opportunities to grow as a designer and developer.
           </p>
           <br />
           <p>
-            I have experience working on a variety of projects, ranging from web
-            and app development to interactive installations and tangible
-            interfaces. I am proficient in a wide range of design and
-            development tools, including Figma, Adobe Creative Suite, HTML, CSS,
-            JavaScript, React, and Arduino for instance. I am also familiar with
-            user research methods, prototyping, usability testing, etc. I am a
-            creative problem solver who enjoys working in teams and with the
-            users to create impactful and user-centered solutions.
+            I have worked on diverse projects, including web and app development, interactive installations, and tangible interfaces. My skills include object-oriented programming, front-end development, and user-centered design. I use tools like Figma and methods such as prototyping, user testing, and workshops to understand user needs. I have experience leading interdisciplinary teams and enjoy solving problems creatively.
           </p>
           <br />
           <p>
-            In my free time, I enjoy photography, cooking, exercising, gaming,
-            and hanging out with my friends on different occasions. In addition,
-            I have multiple projects in the works which I am excited to talk
-            with you about. I strive for good design and technology and look
-            forward to contributing to the field.
+            Outside of work, I enjoy photography, cooking, working out, gaming, and spending time with friends. I am passionate about design and technology and look forward to contributing positively in the field.
           </p>
         </div>
       </div>
@@ -220,11 +207,10 @@
             <h4>(2025)</h4>
             <img src="res/work4v2.png" alt="Image of project" />
             <p>
-              This is a
-              drinking application that aims to create engaging games for
-              smaller groups without disturbing the conversation. The goal is to
-              make it widely available as a web application, which is why I am
-              using React + Vite. Now featuring 5 games, including "1/16
+              This is a drinking application that aims to create engaging games
+              for smaller groups without disturbing the conversation. The goal
+              is to make it widely available as a web application, which is why
+              I am using React + Vite. Now featuring 5 games, including "1/16
               Minesweeper" and "Shot Roulette", which are shown on the image.
               The application is designed to be user-friendly and accessible,
               allowing users to easily navigate and play the games.
@@ -241,38 +227,45 @@
             <h1>Mouse Controller</h1>
             <h4>(2025)</h4>
             <!-- <img src="res/work4v2.png" alt="Image of project" /> -->
-            <p style="margin-top: 0;">
-              This is a small project I made to control the mouse on my
-              computer using any bluetooth controller. I used pygame to read
-              the controller inputs and pyautogui to control the mouse and some keys. Perfect
-              for presentations or if you want to control your computer from a
-              distance.
+            <p style="margin-top: 0">
+              This is a small project I made to control the mouse on my computer
+              using any bluetooth controller. I used pygame to read the
+              controller inputs and pyautogui to control the mouse and some
+              keys. Perfect for presentations or if you want to control your
+              computer from a distance.
             </p>
             <button
               class="buttonPink"
               onclick="window.open('https://github.com/DanielFaour/controller_mouse', '_blank')"
             >
-              Check it out!
+              Available on GitHub!
             </button>
           </div>
-           <div class="tile">
+          <div class="tile">
             <h1>Baymax Psychologist AI</h1>
             <h4>(2025)</h4>
             <img src="res/work10.png" alt="Image of project" />
             <p>
-              A Psychologist AI chatbot inspired by Baymax from Big Hero 6,
-              created using Angular and Typescript. The chatbot is designed to
-              provide emotional support and assistance to users. The basic
-              features are implemented, but I plan to add the actual AI
-              functionality using a free API. Currently it only responses with
-              a pre-written answer.
+              A Psychologist AI chatbot inspired by Baymax from Big Hero 6.
+              Created using Angular and Typescript. The chatbot is designed to
+              provide emotional support and assistance to users. It is
+              essentially a simple web application using Grok API to generate
+              responses. The application consists of a chat interface where
+              users can interact with the chatbot and receive responses. The
+              conversation is saved in local storage for the next visit, and the
+              user can clear their conversation if desired. <br /><br />Note:
+              This project is for educational purposes only and should not be
+              used as a substitute for professional mental health services.
+              <!-- <span style="display: inline-block; background: #ffe4ec; color: #d72660; padding: 8px 16px; border-radius: 8px; font-weight: 500; margin-top: 8px;">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <b>Note:</b> Not intended to replace professional mental health services.
+                </span> -->
             </p>
-
             <button
               class="buttonPink"
               onclick="window.open('https://danielfaour.github.io/baymax_psy/', '_blank')"
             >
-              Check it out!
+              Talk to Baymax!
             </button>
           </div>
           <div class="tile">
@@ -280,7 +273,7 @@
             <h4>(2025)</h4>
             <img src="res/work9v2.png" alt="Image of project" />
             <p>
-              This is a case task I did for a job application. It involved
+              This is a case task I did for a technical interview. It involved
               analyzing a dataset of 100,000 rows with 10 columns, where I had
               to find patterns and insights in the data. The task was to analyze
               and present the data and visualize what I thought was important in
@@ -294,7 +287,7 @@
               class="buttonPink"
               onclick="window.open('https://danielfaour.github.io/big_data_case/', '_blank')"
             >
-              Test it here!
+              Try it out!
             </button>
           </div>
           <div class="tile">
@@ -311,7 +304,7 @@
               class="buttonPink"
               onclick="window.open('https://danielfaour.github.io/todo_list/', '_blank')"
             >
-              Try it out here!
+              Check it out!
             </button>
           </div>
           <div class="tile">

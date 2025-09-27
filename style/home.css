@@ -9,13 +9,11 @@
 
 p {
   font-size: 18px;
-  font-size: 18px;
+  line-height: 1.4;
   word-break: break-word;
   overflow-wrap: break-word;
-  text-align: justify;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  text-align: left;
+  /* hyphens: auto; */
   margin-bottom: 15px;
 }
 
@@ -127,10 +125,9 @@ p {
   margin-top: 20px;
   border-radius: 25px;
   box-sizing: border-box;
-  text-align: justify;
   word-break: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  text-align: left;
 }
 
 #bioBox p {
@@ -164,7 +161,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
   justify-content: center; /* Center items */
 }
 
