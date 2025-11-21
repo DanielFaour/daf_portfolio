@@ -39,7 +39,7 @@ header {
   padding: 0 35px;
   width: 100%;
   box-sizing: border-box;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   z-index: 10;
 }
 
@@ -64,7 +64,7 @@ header a {
   line-height: 50px;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 15px;
   padding-bottom: 5px;
   position: relative;
   color: rgba(234, 128, 154, 1);
@@ -109,6 +109,18 @@ nav li#selectedPage a::before {
   transform: scaleX(1);
   transition: transform 0.3s ease;
 }
+
+nav li:last-child > a {
+  margin-right: 15px;
+}
+
+/* nav li:last-child > a::before,
+nav li:last-child > a:hover::before,
+nav li:last-child > a:focus::before {
+    
+} */
+
+
 
 /* selected page element do this */
 
