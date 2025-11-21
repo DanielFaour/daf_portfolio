@@ -166,6 +166,10 @@ nav li:last-child > a:focus::before {
   
   }
 
+  nav li:last-child > a {
+  margin-right: 0px;
+}
+
   header nav.active {
     display:unset;
     transition: 0.2s;
