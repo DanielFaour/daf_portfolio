@@ -264,7 +264,7 @@ p {
   margin: 0 auto 14px;
   max-width: 1050px;
   padding: 14px;
-  width: min(90vw, 760px);
+  width: min(95vw, 760px);
 }
 
 .workTools select,
