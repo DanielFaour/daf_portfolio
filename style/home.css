@@ -264,7 +264,7 @@ p {
   margin: 0 auto 14px;
   max-width: 1050px;
   padding: 14px;
-  width: min(95vw, 760px);
+  width: min(95vw, 800px);
 }
 
 .workTools select,
@@ -563,6 +563,36 @@ p {
 }
 
 @media (max-width: 800px) {
+  .workTools {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 12px;
+  }
+
+  .workTools select {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .workTools input {
+    flex: none;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .workCount {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    white-space: nowrap;
+  }
+
   #portrait {
     order: 2;
     max-height: 60vw;
@@ -574,6 +604,7 @@ p {
   .workGrid {
     width: 95vw;
   }
+
 }
 
 .profileSectionBand {
@@ -663,17 +694,29 @@ p {
     grid-template-columns: 1fr;
   }
 
+   .workTools {
+    min-width: 95vw;
+    width: min(95vw, 1200px);
+  }
+
+  .profileSections {
+    width: min(95vw, 1200px);
+  }
+
   .profileSections #sectionSkills {
     border-left: 0;
     border-top: 1px solid rgba(223, 223, 223, 0.12);
     padding-left: 0;
     padding-top: 30px;
   }
+
+  
 }
 
 @media (max-width: 800px) {
   .profileSectionBand {
     padding: 34px 0;
+    padding-bottom: 0;
   }
 
   .profileSections {
