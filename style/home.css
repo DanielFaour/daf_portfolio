@@ -1,4 +1,10 @@
 /* General Page Styling */
+:root {
+  --card-radius: 25px;
+  --card-inner-radius: 15px;
+  --button-radius: 15px;
+}
+
 #content {
   width: 100%;
   min-height: 100vh;
@@ -137,7 +143,7 @@ p {
 #sectionSkills {
   background-color: #1C1C1C;
   margin: 0;
-  padding-top: 30px;
+  padding: 34px 0 20px;
 }
 
 #sectionSkills h1 {
@@ -146,54 +152,87 @@ p {
   align-content: center;
 }
 
-#skillBox {
-  background-color: black;
-  width: 65vw;
-  max-width: 800px;
-  height: max-content;
-  padding: 30px;
-  /* padding-left: 40px;
-  padding-right: 40px; */
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 25px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
+.sectionIntro {
+  color: #cfcfcf;
+  margin: 0 auto 20px;
+  max-width: 720px;
+  text-align: center;
+  width: 85vw;
 }
 
-#skillBox h1 {
-  width: 100%;
-  text-align: center;
-  margin: 5px;
+#skillBox {
+  background: black;
+  width: min(88vw, 980px);
+  height: max-content;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: var(--card-radius);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skillCategory {
+  display: block;
+  padding: 0;
+}
+
+.skillCategory:not(:last-child) {
+  border-bottom: 0;
+}
+
+.skillCategory h2 {
+  color: rgba(236, 184, 136, 1);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 9px;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
 }
 
 .skillBtn {
   display: flex;
   align-items: center;
-  border: 2px solid rgba(234, 128, 154, 1);
-  border-radius: 5px;
-  padding: 10px;
-  width: max-content; 
-  max-width: 50%; 
-  flex: 1 0 0; 
+  background: #0f0f0f;
+  border: 1px solid rgba(223, 223, 223, 0.16);
+  border-radius: 999px;
+  min-height: 40px;
+  padding: 8px 18px;
   box-sizing: border-box;
-  white-space: nowrap; 
+  max-width: 100%;
+  transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+  width: fit-content;
+}
+
+.skillBtn:hover {
+  background: rgba(234, 128, 155, 0.496);
+  border-color: rgba(234, 128, 154, 1);
+  color: black;
+  transform: translateY(-1px);
 }
 
 .skillBtn img {
-  width: 24px; 
-  height: 24px; 
-  margin-right: 10px;
+  flex: 0 0 auto;
+  width: 19px; 
+  height: 19px; 
+  margin-right: 8px;
   filter: invert(1);
+  opacity: 0.78;
 }
 
 .skillBtn span {
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 1.2;
   color: #dfdfdf;
+  overflow-wrap: anywhere;
 }
 
 /* Section Styling */
@@ -212,25 +251,109 @@ p {
   text-align: center;
 }
 
+.workTools {
+  align-items: center;
+  background: black;
+  border: 1px solid rgba(234, 128, 154, 0.28);
+  border-radius: var(--button-radius);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 auto 14px;
+  max-width: 1050px;
+  padding: 14px;
+  width: min(90vw, 760px);
+}
+
+.workTools select,
+.workTools input {
+  background-color: #111;
+  border: 1px solid rgba(223, 223, 223, 0.18);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #dfdfdf;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  min-height: 44px;
+  outline: none;
+  padding: 10px 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.workTools select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(236, 184, 136, 1) 50%),
+    linear-gradient(135deg, rgba(236, 184, 136, 1) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 19px,
+    calc(100% - 12px) 19px;
+  background-repeat: no-repeat;
+  background-size: 6px 6px, 6px 6px;
+  cursor: pointer;
+  padding-right: 38px;
+}
+
+.workTools input {
+  flex: 1 1 260px;
+  min-width: min(100%, 260px);
+}
+
+.workTools input::placeholder {
+  color: rgba(223, 223, 223, 0.55);
+}
+
+.workTools select:hover,
+.workTools input:hover {
+  background-color: #151515;
+  border-color: rgba(234, 128, 154, 0.55);
+}
+
+.workTools select:focus,
+.workTools input:focus {
+  border-color: rgba(234, 128, 154, 1);
+  box-shadow: 0 0 0 3px rgba(234, 128, 154, 0.16);
+}
+
+.workCount {
+  background: rgba(234, 128, 154, 0.12);
+  border: 1px solid rgba(234, 128, 154, 0.38);
+  border-radius: 999px;
+  color: rgba(236, 184, 136, 1);
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 100px;
+  padding: 10px 14px;
+  text-align: center;
+}
+
 /* Grid Container for Tiles */
 .workGrid {
-  width: 80%;
+  width: 90vw;
+  max-width: 1400px;
   margin: auto;
   display: block;
-  column-count: 4;
+  column-count: 3;
   column-gap: 25px;
-  padding-top: 10px;
+  padding-top: 16px;
 }
+
 .workGrid .tile {
-  display: inline-block;
-  width: 100%;
   break-inside: avoid;
+  display: inline-flex;
+  width: 100%;
 }
 
 /* Responsive */
 @media (max-width: 1800px) {
   .workGrid {
     column-count: 2;
+    width: 95vw;
+  }
+
+  .profileSections {
     width: 95vw;
   }
 }
@@ -251,13 +374,14 @@ p {
   padding-bottom: 5px;
   background: black;
   opacity: 0;
-  overflow: auto;
+  overflow: hidden;
   transition: opacity 0.4s ease, transform 0.4s ease;
   transform: translateY(50px) rotate(-5deg);
-  border-radius: 25px;
+  border-radius: var(--card-radius);
   box-sizing: border-box;
   margin-bottom: 25px; 
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .tile h1 {
@@ -275,10 +399,15 @@ p {
 }
 
 .tile h4 {
-  padding-bottom: 15px;
+  background: rgba(234, 128, 154, 0.12);
+  border: 1px solid rgba(234, 128, 154, 0.45);
+  border-radius: 999px;
+  color: rgba(236, 184, 136, 1);
+  display: inline-block;
+  margin: 0 auto 15px;
+  padding: 5px 12px;
   font-weight: 500;
   text-align: center;
-  margin: 0;
 }
 
 .tile .grade {
@@ -290,9 +419,51 @@ p {
 
 .tile img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: var(--card-inner-radius);
   background-color: #111;
   pointer-events: none;
+}
+
+.collapsibleText {
+  max-height: 1200px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.25s ease;
+}
+
+.collapsibleText.is-collapsed {
+  max-height: 145px;
+}
+
+.collapsibleText.is-collapsed::after {
+  background: linear-gradient(rgba(0, 0, 0, 0), black 80%);
+  bottom: 0;
+  content: "";
+  height: 56px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+.textToggle {
+  align-self: center;
+  background: transparent;
+  border: 1px solid rgba(234, 128, 154, 0.85);
+  border-radius: 999px;
+  color: rgba(236, 184, 136, 1);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 auto 15px;
+  padding: 8px 18px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.textToggle:hover {
+  background: rgba(234, 128, 154, 1);
+  color: black;
 }
 
 /* .tile .buttonPink {
@@ -303,11 +474,18 @@ p {
 } */
 
 .tile .buttonPink {
-  margin: 0 auto;
-  border-radius: 15px;
+  margin: auto auto 15px;
+  border-radius: var(--button-radius);
   width: 100%;
   display: block;
-  margin-bottom: 15px;
+}
+
+.tile .buttonPink + .buttonPink {
+  margin-top: 0;
+}
+
+.textToggle + .buttonPink {
+  margin-top: 0;
 }
 
 /* Tile Animation when in view */
@@ -322,12 +500,21 @@ p {
   transition: transform 40ms ease-in-out, outline 100ms ease-in-out;
 }
 
+.tile.project-link {
+  cursor: pointer;
+}
+
+.tile.is-hidden {
+  display: none;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
   #intro {
     max-width: 95%;
     padding-top: 40px;
+    padding-bottom: 46px;
   }
 
   #introduction {
@@ -362,7 +549,7 @@ p {
   }
 
   #skillBox {
-    width: 80vw;
+    width: 88vw;
   }
 
   #bioBox {
@@ -390,6 +577,126 @@ p {
   }
 }
 
+.profileSectionBand {
+  background-color: #1C1C1C;
+  box-sizing: border-box;
+  padding: 56px 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.profileSections {
+  align-items: start;
+  background-color: black;
+  border: 1px solid rgba(234, 128, 154, 0.18);
+  border-radius: var(--card-radius);
+  box-sizing: border-box;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 34px;
+  width: 90vw;
+}
+
+.profileSections > div {
+  min-width: 0;
+}
+
+.profileSections #sectionBio,
+.profileSections #sectionSkills {
+  background: transparent;
+  padding: 0;
+}
+
+.profileSections #sectionSkills {
+  border-left: 1px solid rgba(223, 223, 223, 0.12);
+  padding-left: 36px;
+}
+
+.profileSections #sectionBio h1,
+.profileSections #sectionSkills h1 {
+  text-align: left;
+}
+
+.profileSections .sectionIntro {
+  color: #cfcfcf;
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 0 0 22px;
+  text-align: left;
+  width: 100%;
+}
+
+.profileSections #bioBox,
+.profileSections #skillBox {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin: 20px 0 0;
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+
+.profileSections #skillBox {
+  gap: 20px;
+}
+
+.profileSections .skillCategory {
+  padding-bottom: 0;
+}
+
+.profileSections .skillCategory h2 {
+  font-size: 14px;
+}
+
+.profileSections .skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+@media (max-width: 1100px) {
+  .profileSections {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .profileSections #sectionSkills {
+    border-left: 0;
+    border-top: 1px solid rgba(223, 223, 223, 0.12);
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .profileSectionBand {
+    padding: 34px 0;
+  }
+
+  .profileSections {
+    padding: 34px 18px;
+    width: 95vw;
+  }
+
+  .profileSections #bioBox,
+  .profileSections #skillBox {
+    border-radius: 0;
+    margin-top: 12px;
+  }
+
+  .profileSections .sectionIntro {
+    width: 100%;
+  }
+
+  .profileSections .skillCategory {
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: 800px) {
   #portrait {
     order: 2;
@@ -401,7 +708,6 @@ p {
 
   .workGrid {
     width: 95vw;
-    column-count: 1; 
   }
 
   #skillBox {
@@ -427,13 +733,31 @@ p {
 
   #skillBox {
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 18px;
+    margin-top: 0;
+  }
+
+  .profileSections #skillBox {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .sectionIntro {
+    text-align: left;
+    width: 90vw;
+  }
+
+  .skillCategory {
+    padding-bottom: 16px;
+  }
+
+  .skillCategory h2 {
     margin-top: 0;
   }
 
   .skillBtn {
-    width: 100%;
-    padding: 8px;
+    min-height: 38px;
+    padding: 8px 10px;
   }
   .skillBtn img {
     scale: 1;
@@ -442,7 +766,7 @@ p {
   }
 
   .skillBtn span {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .tile .buttonPink {

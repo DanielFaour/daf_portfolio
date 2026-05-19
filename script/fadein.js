@@ -1,5 +1,4 @@
 let elementsArray = document.querySelectorAll(".tile");
-console.log(elementsArray);
 window.addEventListener('scroll', fadeIn ); 
 function fadeIn() {
     for (var i = 0; i < elementsArray.length; i++) {

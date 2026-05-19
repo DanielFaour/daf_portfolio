@@ -1,0 +1,145 @@
+.projectPage {
+  background: #1C1C1C;
+  color: #dfdfdf;
+  min-height: 100vh;
+  padding: 90px 0 50px;
+}
+
+.projectHero,
+.projectContent {
+  margin: auto;
+  max-width: 1050px;
+  width: 90vw;
+}
+
+.projectHero {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
+  align-items: center;
+}
+
+.projectEyebrow {
+  color: rgba(236, 184, 136, 1);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.projectHero h1 {
+  font-size: 58px;
+  line-height: 1;
+  margin: 0 0 16px;
+}
+
+.projectLead {
+  color: #cfcfcf;
+  font-size: 20px;
+  line-height: 1.45;
+  margin: 0 0 24px;
+}
+
+.projectHero img {
+  background: #111;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.projectActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.projectActions .buttonPink {
+  text-decoration: none;
+  width: auto;
+}
+
+.projectMeta {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 34px auto;
+}
+
+.projectMeta div,
+.projectSection {
+  background: black;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.projectMeta div {
+  border: 1px solid rgba(234, 128, 154, 0.45);
+  padding: 16px;
+}
+
+.projectMeta span {
+  color: rgba(236, 184, 136, 1);
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.projectMeta p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.projectSection {
+  margin-top: 22px;
+  padding: 28px;
+}
+
+.projectSection h2 {
+  color: #dfdfdf;
+  margin: 0 0 14px;
+}
+
+.projectSection p,
+.projectSection li {
+  color: #cfcfcf;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.projectSection ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .projectHero {
+    grid-template-columns: 1fr;
+  }
+
+  .projectHero h1 {
+    font-size: 42px;
+  }
+
+  .projectMeta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .projectPage {
+    padding-top: 70px;
+  }
+
+  .projectMeta {
+    grid-template-columns: 1fr;
+  }
+
+  .projectSection {
+    padding: 20px;
+  }
+
+  .projectActions .buttonPink {
+    width: 100%;
+  }
+}

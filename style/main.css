@@ -133,12 +133,53 @@ nav li:last-child > a:focus::before {
 }
 
 .menu_toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
   color: #dfdfdf;
   float: right;
+  height: 50px;
+  justify-content: center;
   line-height: 50px;
-  font-size: 24px;
+  padding: 0;
+  width: 44px;
   cursor: pointer;
   display: none;
+}
+
+.menu_toggle span,
+.menu_toggle::before,
+.menu_toggle::after {
+  background: #dfdfdf;
+  border-radius: 999px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 10px;
+  position: absolute;
+  top: 24px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 24px;
+}
+
+.menu_toggle::before {
+  transform: translateY(-8px);
+}
+
+.menu_toggle::after {
+  transform: translateY(8px);
+}
+
+.menu_toggle.active span {
+  opacity: 0;
+}
+
+.menu_toggle.active::before {
+  transform: rotate(45deg);
+}
+
+.menu_toggle.active::after {
+  transform: rotate(-45deg);
 }
 
 /* toggle menu */
@@ -151,7 +192,8 @@ nav li:last-child > a:focus::before {
   }
 
   .menu_toggle {
-    display: block;
+    display: flex;
+    position: relative;
   }
 
   header nav {
@@ -171,7 +213,7 @@ nav li:last-child > a:focus::before {
 }
 
   header nav.active {
-    display:unset;
+    display: block;
     transition: 0.2s;
   }
   
