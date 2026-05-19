@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,7 +37,12 @@
         </ul>
       </nav>
 
-      <button class="menu_toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <button
+        class="menu_toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
         <span></span>
       </button>
     </header>
@@ -59,7 +64,7 @@
             <button
               class="buttonPink"
               id="contactBtn"
-              onclick="location.href='mailto:daniea1602@gmail.com';"
+              onclick="location.href = 'mailto:daniea1602@gmail.com'"
               style="align-items: center; gap: 8px"
             >
               <i class="fa fa-envelope" style="color: #000"></i>
@@ -69,13 +74,20 @@
           <div id="icons">
             <a
               class="icon"
-              onclick="window.open('https://www.linkedin.com/in/daniel-faour/', '_blank')"
+              onclick="
+                window.open(
+                  'https://www.linkedin.com/in/daniel-faour/',
+                  '_blank',
+                )
+              "
             >
               <img src="res/linkedin.png" alt="LinkedIn icon" />
             </a>
             <a
               class="icon"
-              onclick="window.open('https://www.instagram.com/daniel_faour/', '_blank')"
+              onclick="
+                window.open('https://www.instagram.com/daniel_faour/', '_blank')
+              "
             >
               <img src="res/instagram.png" alt="Instagram icon" />
             </a>
@@ -94,140 +106,140 @@
 
       <div class="profileSectionBand">
         <div class="profileSections">
-      <div id="sectionBio">
-        <h1>About me</h1>
-        <div id="bioBox">
-          <p>
-            I have a master's degree in Informatics from the University of Oslo,
-            specializing in UX design and software development. My background in computer
-            science and design allows me to create engaging and meaningful
-            experiences through technology. I am seeking new opportunities to
-            grow as a designer and developer.
-          </p>
-          <br />
-          <p>
-            I have worked on diverse projects, including web and app
-            development, interactive installations, and tangible interfaces. My
-            skills include object-oriented programming, front-end development,
-            and user-centered design. I use tools like Figma and methods such as
-            prototyping, user testing, and workshops to understand user needs. I
-            have experience leading interdisciplinary teams and enjoy solving
-            problems creatively.
-          </p>
-          <br />
-          <p>
-            Outside of work, I enjoy photography, cooking, working out, gaming,
-            and spending time with friends. I am passionate about design and
-            technology and look forward to contributing positively in the field.
-          </p>
-        </div>
-      </div>
+          <div id="sectionBio">
+            <h1>About me</h1>
+            <div id="bioBox">
+              <p>
+                I have a master's degree in Informatics from the University of
+                Oslo, specializing in UX design and software development. My
+                background in computer science and design allows me to create
+                engaging and meaningful experiences through technology. I am
+                seeking new opportunities to grow as a designer and developer.
+              </p>
+              <br />
+              <p>
+                I have worked on diverse projects, including web and app
+                development, interactive installations, and tangible interfaces.
+                My skills include object-oriented programming, front-end
+                development, and user-centered design. I use tools like Figma
+                and methods such as prototyping, user testing, and workshops to
+                understand user needs. I have experience leading
+                interdisciplinary teams and enjoy solving problems creatively.
+              </p>
+              <br />
+              <p>
+                Outside of work, I enjoy photography, cooking, working out,
+                gaming, and spending time with friends. I am passionate about
+                design and technology and look forward to contributing
+                positively in the field.
+              </p>
+            </div>
+          </div>
 
-      <div id="sectionSkills">
-        <h1>Skills</h1>
-        <div id="skillBox">
-          <div class="skillCategory">
-            <h2>Design</h2>
-            <div class="skillList">
-              <div class="skillBtn">
-                <img src="res/idea.png" alt="Skill Icon" />
-                <span>UX Design</span>
+          <div id="sectionSkills">
+            <h1>Skills</h1>
+            <div id="skillBox">
+              <div class="skillCategory">
+                <h2>Design</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>UX Design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Universal Design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Ethical Design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Product Design</span>
+                  </div>
+                </div>
               </div>
-              <div class="skillBtn">
-                <img src="res/idea.png" alt="Skill Icon" />
-                <span>Universal Design</span>
+              <div class="skillCategory">
+                <h2>Development</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Web Development</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>App Development</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Programming</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Information Security</span>
+                  </div>
+                </div>
               </div>
-              <div class="skillBtn">
-                <img src="res/idea.png" alt="Skill Icon" />
-                <span>Ethical Design</span>
+              <div class="skillCategory">
+                <h2>Hardware and data</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>Internet of Things</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>Breadboarding</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>API Development</span>
+                  </div>
+                </div>
               </div>
-              <div class="skillBtn">
-                <img src="res/idea.png" alt="Skill Icon" />
-                <span>Product Design</span>
+              <div class="skillCategory">
+                <h2>Team and business</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Project Management</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Leadership</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Public Relations</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/partnership.png" alt="Skill Icon" />
+                    <span>Direct Sales</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="skillCategory">
-            <h2>Development</h2>
-            <div class="skillList">
-              <div class="skillBtn">
-                <img src="res/code.png" alt="Skill Icon" />
-                <span>Web Development</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/code.png" alt="Skill Icon" />
-                <span>App Development</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/code.png" alt="Skill Icon" />
-                <span>Programming</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/code.png" alt="Skill Icon" />
-                <span>Information Security</span>
-              </div>
-            </div>
-          </div>
-          <div class="skillCategory">
-            <h2>Hardware and data</h2>
-            <div class="skillList">
-              <div class="skillBtn">
-                <img src="res/iot.png" alt="Skill Icon" />
-                <span>Internet of Things</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/iot.png" alt="Skill Icon" />
-                <span>Breadboarding</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/iot.png" alt="Skill Icon" />
-                <span>API Development</span>
-              </div>
-            </div>
-          </div>
-          <div class="skillCategory">
-            <h2>Team and business</h2>
-            <div class="skillList">
-              <div class="skillBtn">
-                <img src="res/group.png" alt="Skill Icon" />
-                <span>Project Management</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/group.png" alt="Skill Icon" />
-                <span>Leadership</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/group.png" alt="Skill Icon" />
-                <span>Public Relations</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/partnership.png" alt="Skill Icon" />
-                <span>Direct Sales</span>
-              </div>
-            </div>
-          </div>
-          <div class="skillCategory">
-            <h2>AI</h2>
-            <div class="skillList">
-              <div class="skillBtn">
-                <img src="res/ai.png" alt="Skill Icon" />
-                <span>Artificial Intelligence</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/ai.png" alt="Skill Icon" />
-                <span>Prompt Engineering</span>
-              </div>
-              <div class="skillBtn">
-                <img src="res/ai.png" alt="Skill Icon" />
-                <span>AI Workflows</span>
+              <div class="skillCategory">
+                <h2>AI</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>Artificial Intelligence</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>Prompt Engineering</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>AI Workflows</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      </div>
-        </div>
 
       <div id="sectionWork">
         <div>
@@ -278,12 +290,20 @@
             </p> -->
             <button
               class="buttonPink"
-              onclick="window.open('https://nva.sikt.no/registration/019c9140ce7b-ab26ac78-590b-4a58-bb66-0793529c0870', '_blank')"
+              onclick="
+                window.open(
+                  'https://nva.sikt.no/registration/019c9140ce7b-ab26ac78-590b-4a58-bb66-0793529c0870',
+                  '_blank',
+                )
+              "
             >
               Read it at SIKT!
             </button>
           </div>
-          <div class="tile project-link" data-project-page="projects/drikkings/index_eng.html">
+          <div
+            class="tile project-link"
+            data-project-page="projects/drikkings/index_eng.html"
+          >
             <h1>Drikkings.no</h1>
             <h4>2025</h4>
             <img src="res/work4v2.png" alt="Image of project" />
@@ -299,15 +319,60 @@
 
             <button
               class="buttonPink"
-              onclick="location.href='projects/drikkings/index_eng.html'"
+              onclick="location.href = 'projects/drikkings/index_eng.html'"
             >
               View project case
             </button>
             <button
               class="buttonPink"
-              onclick="window.open('https://danielfaour.github.io/drikkings/', '_blank')"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/drikkings/',
+                  '_blank',
+                )
+              "
             >
               Check it out!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Telegram AI Assistant</h1>
+            <h4>2026</h4>
+            <img src="res/work12.png" alt="Image of the project" />
+
+            <p>
+              This is a small project where I developed a personal chatbot for
+              Telegram. I set up the bot through BotFather and connected it to a
+              Python integration that communicates with an AI model running
+              locally on my own machine through the LM Studio API.
+
+              <br /><br />
+
+              The goal of the project was to explore how to build a private and
+              accessible AI assistant without depending on external services for
+              running the model. By running the model locally, I get more
+              control over data flow, privacy and security, while also being
+              able to adapt the assistant to my own needs.
+
+              <br /><br />
+
+              The project gave me practical experience with the Telegram Bot
+              API, Python, local model integration and how different systems can
+              be connected into a working solution. It was also a useful way to
+              test how AI can be used in more personal and controlled
+              applications.
+            </p>
+
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://github.com/DanielFaour/lmstudio_telegram/',
+                  '_blank',
+                )
+              "
+            >
+              Check out the code on GitHub!
             </button>
           </div>
           <div class="tile">
@@ -317,19 +382,26 @@
             <p>
               For some time I have had problems with dry eyes during the winter,
               and to find out the underlying reason for this problem I made an
-              IoT project with an ESP32 to host a local server API in my network to monitor humidity
-              with a humidity and temperature sensor. Then I made a front-end application
-              in React to read this API data and visualize it through a simple dashboard.
-              <br><br>
-              Through this project I found out I have been living in bad bedroom conditions
-              with low humidity which tends to promote dry eyes. Thanks to this I am moving
-              forward to sync this project to another project involving mist diffusers to
-              create a more humid enviroment.
+              IoT project with an ESP32 to host a local server API in my network
+              to monitor humidity with a humidity and temperature sensor. Then I
+              made a front-end application in React to read this API data and
+              visualize it through a simple dashboard.
+              <br /><br />
+              Through this project I found out I have been living in bad bedroom
+              conditions with low humidity which tends to promote dry eyes.
+              Thanks to this I am moving forward to sync this project to another
+              project involving mist diffusers to create a more humid
+              enviroment.
             </p>
 
             <button
               class="buttonPink"
-              onclick="window.open('https://github.com/DanielFaour/HUMIDIFIER_MODULE_PROJECT/', '_blank')"
+              onclick="
+                window.open(
+                  'https://github.com/DanielFaour/HUMIDIFIER_MODULE_PROJECT/',
+                  '_blank',
+                )
+              "
             >
               Check out the code on Github!
             </button>
@@ -347,7 +419,12 @@
             </p>
             <button
               class="buttonPink"
-              onclick="window.open('https://github.com/DanielFaour/controller_mouse', '_blank')"
+              onclick="
+                window.open(
+                  'https://github.com/DanielFaour/controller_mouse',
+                  '_blank',
+                )
+              "
             >
               Available on GitHub!
             </button>
@@ -374,7 +451,12 @@
             </p>
             <button
               class="buttonPink"
-              onclick="window.open('https://danielfaour.github.io/baymax_psy/', '_blank')"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/baymax_psy/',
+                  '_blank',
+                )
+              "
             >
               Talk to Baymax!
             </button>
@@ -396,7 +478,12 @@
             </p>
             <button
               class="buttonPink"
-              onclick="window.open('https://danielfaour.github.io/big_data_case/', '_blank')"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/big_data_case/',
+                  '_blank',
+                )
+              "
             >
               Try it out!
             </button>
@@ -413,7 +500,12 @@
 
             <button
               class="buttonPink"
-              onclick="window.open('https://danielfaour.github.io/todo_list/', '_blank')"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/todo_list/',
+                  '_blank',
+                )
+              "
             >
               Check it out!
             </button>
@@ -487,7 +579,12 @@
             </p>
             <button
               class="buttonPink"
-              onclick="window.open('https://www.uio.no/studier/emner/matnat/ifi/IN1060/v22/prosjekter-var-2022/ergon/', '_blank')"
+              onclick="
+                window.open(
+                  'https://www.uio.no/studier/emner/matnat/ifi/IN1060/v22/prosjekter-var-2022/ergon/',
+                  '_blank',
+                )
+              "
             >
               Read more at UiO's webpage!
             </button>
@@ -510,7 +607,12 @@
             </p>
             <button
               class="buttonPink"
-              onclick="window.open('https://www.uio.no/studier/emner/matnat/ifi/IN1060/v20/prosjekter-20/interra/', '_blank')"
+              onclick="
+                window.open(
+                  'https://www.uio.no/studier/emner/matnat/ifi/IN1060/v20/prosjekter-20/interra/',
+                  '_blank',
+                )
+              "
             >
               Read more at UiO's webpage!
             </button>
@@ -530,7 +632,12 @@
             </p>
             <button
               class="buttonPink"
-              onclick="window.open('https://danielfaour.github.io/ValleyWayGame/', '_blank')"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/ValleyWayGame/',
+                  '_blank',
+                )
+              "
             >
               Play it on Github Pages!
             </button>
