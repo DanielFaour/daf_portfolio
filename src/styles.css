@@ -1226,14 +1226,13 @@ select:focus-visible {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 350ms ease, transform 350ms ease;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (max-width: 1000px) {
