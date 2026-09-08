@@ -2,17 +2,16 @@ export const copy = {
   no: {
     nav: { home: "Hjem", work: "Prosjekter", cv: "CV", menu: "Åpne meny" },
     hero: {
-      eyebrow: "UX-designer og programvareutvikler",
-      greeting: "Heisann! Mitt navn er",
+      eyebrow: "Utvikler og UX-designer i Oslo",
       title: "Daniel Faour",
-      role: "Jeg er en UX-designer og programvareutvikler.",
-      primary: "Ta kontakt!",
-      secondary: "Se prosjektene mine",
+      intro: "Jeg utvikler digitale produkter som kombinerer ryddig kode, tydelig design og en god forståelse av menneskene som skal bruke dem.",
+      primary: "Se prosjektene mine",
+      secondary: "Utforsk CV-en",
       availability: "Åpen for nye muligheter"
     },
     home: {
       aboutLabel: "Om meg",
-      aboutTitle: "Om meg",
+      aboutTitle: "Teknologi med mennesker i sentrum.",
       about: [
         "Jeg har en mastergrad i informatikk fra Universitetet i Oslo, med fordypning i programvareutvikling og UX-design. Jeg liker å jobbe i møtet mellom kode, design og brukerbehov, og trives best når jeg får følge en idé hele veien til en løsning som faktisk fungerer.",
         "Prosjektene mine spenner fra React-applikasjoner og API-er til fysiske prototyper med Arduino, sensorer og IoT. Felles for dem er at jeg prøver å gjøre komplekse ting forståelige, nyttige og enkle å ta i bruk.",
@@ -24,10 +23,10 @@ export const copy = {
         ["Nysgjerrig i praksis", "Jeg lærer best ved å bygge, teste og forbedre noe som løser et reelt behov."]
       ],
       skillsLabel: "Kompetanse",
-      skillsTitle: "Ferdigheter",
+      skillsTitle: "Et bredt verktøysett, brukt med hensikt.",
       skillsIntro: "Teknologier og arbeidsmåter jeg har praktisk erfaring med gjennom studier, egne prosjekter og tverrfaglig arbeid.",
-      featuredLabel: "Prosjekter",
-      featuredTitle: "Sjekk ut prosjektene mine!",
+      featuredLabel: "Utvalgt arbeid",
+      featuredTitle: "Noen prosjekter jeg er spesielt fornøyd med.",
       allProjects: "Se alle prosjekter",
       contactLabel: "Ta kontakt",
       contactTitle: "Har du en idé, en rolle eller bare lyst til å slå av en prat?",
@@ -81,17 +80,16 @@ export const copy = {
   en: {
     nav: { home: "Home", work: "Work", cv: "CV", menu: "Open menu" },
     hero: {
-      eyebrow: "UX designer and software developer",
-      greeting: "Hi! My name is",
+      eyebrow: "Developer and UX designer in Oslo",
       title: "Daniel Faour",
-      role: "I am a UX designer and software developer.",
-      primary: "Get in touch!",
-      secondary: "View my work",
+      intro: "I create digital products that bring together thoughtful code, clear design, and a genuine understanding of the people who use them.",
+      primary: "View my work",
+      secondary: "Explore my CV",
       availability: "Open to new opportunities"
     },
     home: {
       aboutLabel: "About me",
-      aboutTitle: "About me",
+      aboutTitle: "Technology with people at the centre.",
       about: [
         "I hold a master's degree in Informatics from the University of Oslo, specialising in software development and UX design. I enjoy working where code, design, and user needs meet, especially when I can follow an idea all the way to a solution that works in practice.",
         "My projects range from React applications and APIs to physical prototypes with Arduino, sensors, and IoT. What connects them is an effort to make complex things understandable, useful, and easy to use.",
@@ -103,10 +101,10 @@ export const copy = {
         ["Curiosity in practice", "I learn best by building, testing, and improving something that meets a real need."]
       ],
       skillsLabel: "Capabilities",
-      skillsTitle: "Skills",
+      skillsTitle: "A broad toolkit, applied with purpose.",
       skillsIntro: "Technologies and methods I have used through my studies, independent projects, and cross-functional work.",
-      featuredLabel: "Projects",
-      featuredTitle: "Check out my work!",
+      featuredLabel: "Selected work",
+      featuredTitle: "A few projects I am particularly proud of.",
       allProjects: "View all projects",
       contactLabel: "Get in touch",
       contactTitle: "Have an idea, an opportunity, or simply want to talk?",
