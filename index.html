@@ -1,14 +1,804 @@
 <!doctype html>
-<html lang="no">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f6f4ef" />
-    <meta name="description" content="Porteføljen til Daniel Faour, utvikler og UX-designer i Oslo." />
-    <title>Daniel Faour | Utvikler og UX-designer</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hjem</title>
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <!-- <div id="flag">
+        <div id="flag1"></div>
+        <div id="flag2"></div>
+      </div> -->
+      <a href="index.html">Daniel Faour</a>
+      <nav>
+        <ul>
+          <li id="selectedPage"><a href="index.html">HJEM</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="index_eng.html">🇬🇧</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="menu_toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+      </button>
+    </header>
+
+    <div id="content">
+      <div id="intro">
+        <img
+          class="intCont"
+          id="portrait"
+          src="res/defi-portis.jpg"
+          alt="Image of ..."
+        />
+        <div id="introduction" class="inCont">
+          <h2>Heisann! Mitt navn er</h2>
+          <h1>Daniel Faour.</h1>
+          <h3>Jeg er en UX-designer og programvareutvikler.</h3>
+          <br />
+          <div style="display: flex; justify-content: center">
+            <button
+              class="buttonPink"
+              id="contactBtn"
+              onclick="location.href = 'mailto:daniea1602@gmail.com'"
+              style="align-items: center; gap: 8px"
+            >
+              <i class="fa fa-envelope" style="color: #000"></i>
+              Ta kontakt!
+            </button>
+          </div>
+          <div id="icons">
+            <a
+              class="icon"
+              onclick="
+                window.open(
+                  'https://www.linkedin.com/in/daniel-faour/',
+                  '_blank',
+                )
+              "
+            >
+              <img src="res/linkedin.png" alt="LinkedIn icon" />
+            </a>
+            <a
+              class="icon"
+              onclick="
+                window.open('https://www.instagram.com/daniel_faour/', '_blank')
+              "
+            >
+              <img src="res/instagram.png" alt="Instagram icon" />
+            </a>
+            <a class="icon" href="cv.html">
+              <img src="res/resume.png" alt="Instagram icon" />
+            </a>
+            <a
+              class="icon"
+              onclick="window.open('https://github.com/DanielFaour/', '_blank')"
+            >
+              <img src="res/github-sign.png" alt="Github icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profileSectionBand">
+        <div class="profileSections">
+          <div id="sectionBio">
+            <h1>Om meg</h1>
+            <div id="bioBox">
+              <p>
+                Jeg er en utvikler og UX-designer med mastergrad i informatikk
+                fra Universitetet i Oslo, med bakgrunn i både
+                systemutvikling og UX-design. Jeg liker å jobbe i
+                skjæringspunktet mellom kode, design og brukerbehov, og
+                trives med prosjekter der jeg kan være med fra tidlig
+                idé til en fungerende løsning.
+              </p>
+              <br />
+              <p>
+                Jeg har erfaring med fullstack-utvikling, front-end,
+                React-baserte webapplikasjoner, Python, API-er og enklere
+                backend-logikk. Flere av prosjektene mine kombinerer også
+                software med fysiske eller interaktive elementer, som IoT,
+                Arduino, sensorer og taktile grensesnitt.
+              </p>
+              <br />
+              <p>
+                På designsiden jobber jeg med brukersentrert design,
+                prototyping, brukertesting, workshops og universell utforming.
+                For meg handler god design ikke bare om hvordan noe ser ut, men
+                om at strukturen, funksjonen og opplevelsen faktisk henger
+                sammen for menneskene som skal bruke det.
+              </p>
+              <br />
+              <p>
+                Jeg har også erfaring med prosjektledelse og tverrfaglig
+                samarbeid fra Designforeningen ved IFI, der jeg ledet en
+                studentorganisasjon med utviklere og designere. Jeg liker
+                å ta ansvar, holde oversikt og bidra til at et team
+                beveger seg mot en løsning som er både
+                gjennomførbar og gjennomtenkt.
+              </p>
+              <br />
+              <p>
+                Utenom fag og prosjekter liker jeg fotografering, matlaging,
+                trening, gaming og å tilbringe tid med venner. Jeg liker
+                å ha ting rundt meg som gir rom for både fokus og
+                kreativitet, og jeg merker at det også preger hvordan jeg
+                jobber. Jeg er nysgjerrig på detaljer, liker å lage
+                ting som fungerer i praksis, og setter pris på gode
+                løsninger som føles enkle selv når det
+                ligger mye tanke bak.
+              </p>
+            </div>
+          </div>
+
+          <div id="sectionSkills">
+            <h1>Ferdigheter</h1>
+            <div id="skillBox">
+              <div class="skillCategory">
+                <h2>Design</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>UX-design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Universell design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Etisk design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Produktdesign</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Brukersentrert design</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Prototyping</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>Brukertesting</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>3D-printing</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/idea.png" alt="Skill Icon" />
+                    <span>3D-modellering</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skillCategory">
+                <h2>Utvikling</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Webutvikling</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Apputvikling</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Programmering</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Informasjonssikkerhet</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Fullstack-utvikling</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>React</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>TypeScript</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/code.png" alt="Skill Icon" />
+                    <span>Python</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skillCategory">
+                <h2>Hardware og data</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>Internet of Things</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>Breadboarding</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>API-utvikling</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/iot.png" alt="Skill Icon" />
+                    <span>PC-bygging og feilsøking</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skillCategory">
+                <h2>Team og forretning</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Prosjektledelse</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Lederskap</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Public Relations</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/partnership.png" alt="Skill Icon" />
+                    <span>Salg</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Tverrfaglig samarbeid</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/group.png" alt="Skill Icon" />
+                    <span>Teknisk koordinering</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skillCategory">
+                <h2>AI</h2>
+                <div class="skillList">
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>Kunstig intelligens</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>Prompt engineering</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>KI-arbeidsflyt</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>No-code</span>
+                  </div>
+                  <div class="skillBtn">
+                    <img src="res/ai.png" alt="Skill Icon" />
+                    <span>Vibe coding</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sectionWork">
+        <div>
+          <h1>Se gjennom arbeidet mitt!</h1>
+        </div>
+        <div class="workTools" aria-label="Project filters">
+          <select data-project-year aria-label="Velg år">
+            <option value="all">Alle år</option>
+          </select>
+          <input
+            data-project-search
+            type="search"
+            placeholder="Søk etter prosjekt"
+            aria-label="Søk etter prosjekt"
+          />
+          <span
+            class="workCount"
+            data-project-count
+            data-count-singular="prosjekt"
+            data-count-plural="prosjekter"
+          ></span>
+        </div>
+        <div class="workGrid">
+          <div class="tile">
+            <h1>Masteroppgave i Informatikk - IN5960</h1>
+            <h4>2024</h4>
+            <img src="res/master.png" alt="Image of project" />
+            <h2>
+              "The Three Fundamental Qualities for Emotional Influence in
+              Design"
+            </h2>
+            <p>
+              Denne masteroppgaven undersøker forholdet mellom design og
+              følelser, med fokus på de grunnleggende kvalitetene som påvirker
+              emosjonelle responser i designartefakter. Ved å bruke Research
+              through Design som hovedmetode, støttet av prinsipper fra
+              Emotional-Driven Design, utforsker oppgaven hvordan disse
+              kvalitetene bidrar til å skape følelsesmessig engasjerende
+              installasjoner. Prosessen bestod av fire faser: datainnsamling,
+              konseptutvikling, utvikling av installasjonen og analyse. Gjennom
+              arbeidet identifiserte vi tre grunnleggende kvaliteter:
+              historiefortelling, sanselig engasjement og familiaritet. Disse
+              viser seg å være sentrale for å skape mer immersive opplevelser. I
+              tillegg kan elementer som utforskning, meningsfulle interaksjoner,
+              kontraster og robusthet ytterligere styrke det emosjonelle
+              engasjementet. Studien gir både teoretisk støtte og praktiske
+              føringer innen designorientert HCI og RtD-metodikk, og presenterer
+              et rammeverk for videre forskning og utvikling av emosjonelt
+              engasjerende interaktive artefakter.
+            </p>
+            <p style="text-align: center"><b>Karakter: B</b></p>
+            <!-- <p style="text-align: center; font-size: 14px;">
+              Lenken funker ikke. Spør meg om en digital kopi!
+            </p> -->
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://nva.sikt.no/registration/019c9140ce7b-ab26ac78-590b-4a58-bb66-0793529c0870',
+                  '_blank',
+                )
+              "
+            >
+              Les via SIKT!
+            </button>
+          </div>
+          <div
+            class="tile project-link"
+            data-project-page="projects/drikkings/"
+          >
+            <h1>Drikkings.no</h1>
+            <h4>2025</h4>
+            <img src="res/work4v2.png" alt="Image of project" />
+            <p>
+              Dette er en drikkelek-applikasjon som skal lage engasjerende spill
+              for mindre grupper uten å ødelegge praten. Målet er å gjøre den
+              lett tilgjengelig som en nettapplikasjon, derfor bruker jeg React
+              + Vite. Den har nå fem spill, blant annet «1/16 Minesweeper» og
+              «Shot Roulette», som vises på bildet. Applikasjonen er laget for å
+              være brukervennlig og lett å navigere, slik at folk raskt kan
+              komme i gang og spille.
+            </p>
+
+            <button
+              class="buttonPink"
+              onclick="location.href = 'projects/drikkings/'"
+            >
+              Les prosjektcase
+            </button>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/drikkings/',
+                  '_blank',
+                )
+              "
+            >
+              Prøv det ut!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Riggr</h1>
+            <h4>2026</h4>
+            <img src="res/work13.png" alt="Image of project" />
+            <p>
+              Riggr er en liten utleieplattform jeg bygget i samarbeid med Codex
+              for høyttalere og eventutstyr i Oslo. Målet var å lage en enkel og
+              praktisk løsning der brukere kan se utstyr, sjekke datoer, få
+              estimert pris og sende en forespørsel uten konto eller
+              betalingsløsning. Nettsiden er bygget med React og Vite, med
+              Google Sheets og Apps Script som en lett backend for produkter og
+              bookinger. Den støtter norsk og engelsk, flere produkter i samme
+              forespørsel, tilgjengelighetssjekk og mobilvennlig bruk.
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/Riggr/',
+                  '_blank',
+                )
+              "
+            >
+              Prøv det ut!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>STV1020 Eksamensøving</h1>
+            <h4>2026</h4>
+            <p>
+              Dette er en studieapp jeg vibe-codet med Codex som forberedelse
+              til STV1020-eksamen. Målet var å lage et praktisk
+              øvingsverktøy som gjorde det enklere å repetere sentrale begreper
+              i kvantitativ metode, teste egen forståelse og øve på en måte som
+              lignet mer på eksamen.
+            </p>
+            <p>
+              Innholdet består av flashcards og multiple-choice-spørsmål basert
+              på datapunkter fra pensum, blant annet vitenskapelig metode,
+              kausalitet, forskningsdesign, måling, deskriptiv statistikk,
+              statistisk inferens, bivariat analyse, regresjon, faste effekter,
+              visualisering, data og formler. Appen har både kort øving og en
+              lengre eksamensmodus, med blandede spørsmål, fem svaralternativer
+              og lokal testhistorikk i nettleseren.
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/STV1020-eksamensoving/',
+                  '_blank',
+                )
+              "
+            >
+              Prøv studieappen!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Telegram AI Assistent</h1>
+            <h4>2026</h4>
+            <img src="res/work12.png" alt="Image of project" />
+            <p>
+              Dette er et lite prosjekt hvor jeg utviklet en personlig chatbot
+              for Telegram. Jeg satte opp boten gjennom BotFather og koblet den
+              videre til en Python-integrasjon som kommuniserer med en AI-modell
+              som kjører lokalt på egen maskin via LM Studio API. <br /><br />
+              Målet med prosjektet var å utforske hvordan man kan bygge en
+              privat og tilgjengelig AI-assistent uten å være avhengig av
+              eksterne tjenester for selve modellkjøringen. Ved å kjøre modellen
+              lokalt får jeg mer kontroll over dataflyt, personvern og
+              sikkerhet, samtidig som assistenten kan tilpasses egne behov.<br /><br />
+              Prosjektet ga meg praktisk erfaring med Telegram Bot API, Python,
+              lokal modellintegrasjon og hvordan ulike systemer kan kobles
+              sammen til en fungerende helhet. Det var også en fin måte å teste
+              hvordan AI kan brukes i mer personlige og kontrollerte løsninger.
+            </p>
+
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://github.com/DanielFaour/lmstudio_telegram/',
+                  '_blank',
+                )
+              "
+            >
+              Sjekk ut koden på Github!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Fuktighetsmonitor</h1>
+            <h4>2026</h4>
+            <img src="res/work11.png" alt="Image of project" />
+            <p>
+              Jeg har en stund hatt problemer med tørre øyne om vinteren, og for
+              å finne ut den underliggende årsaken til dette problemet, lagde
+              jeg et IoT-prosjekt med en ESP32 for å være vert for et lokalt
+              server-API i nettverket mitt for å overvåke fuktigheten med en
+              fuktighets- og temperatursensor. Deretter lagde jeg en
+              front-end-applikasjon i React for å lese disse API-dataene og
+              visualisere dem gjennom et enkelt dashbord.
+              <br /><br />
+              Gjennom dette prosjektet fant jeg ut at jeg har bodd i dårlige
+              soveromsforhold med lav luftfuktighet, noe som har en tendens til
+              å fremme tørre øyne. Takket være dette går jeg videre med å
+              synkronisere dette prosjektet med et annet prosjekt som involverer
+              vanndiffusorer for å skape et fuktigere miljø.
+            </p>
+
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://github.com/DanielFaour/HUMIDIFIER_MODULE_PROJECT/',
+                  '_blank',
+                )
+              "
+            >
+              Sjekk ut koden på Github!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Mus Kontroller</h1>
+            <h4>2025</h4>
+            <!-- <img src="res/work4v2.png" alt="Image of project" /> -->
+            <p style="margin-top: 0">
+              Dette er et lite prosjekt jeg lagde for å kunne styre musen på
+              datamaskinen ved hjelp av en hvilken som helst
+              Bluetooth-spillkontroller. Jeg brukte Pygame til å lese
+              kontroller-inputs og Pyautogui til å styre musen samt enkelte
+              tastetrykk. Perfekt for presentasjoner eller når du ønsker å
+              kontrollere PC-en fra avstand.
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://github.com/DanielFaour/controller_mouse',
+                  '_blank',
+                )
+              "
+            >
+              Tilgjengelig på GitHub!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Baymax Psykologi AI</h1>
+            <h4>2025</h4>
+            <img src="res/work10.png" alt="Image of project" />
+            <p>
+              En psykolog-inspirert AI-chatbot basert på Baymax fra Big Hero 6.
+              Laget med Angular og Typescript. Chatboten er utviklet for å gi
+              emosjonell støtte og assistanse til brukeren. Det er i bunn og
+              grunn en enkel nettapplikasjon som bruker OpenRouter-API for å
+              generere svar. Applikasjonen består av et chatgrensesnitt der
+              brukeren kan snakke med chatboten og få svar tilbake. Samtalen
+              lagres i local storage til neste besøk, og brukeren kan slette
+              historikken når som helst. <br /><br />
+              Merk: Dette prosjektet er kun for læringsformål og er ikke ment
+              som en erstatning for profesjonelle psykiske helsetjenester.
+
+              <!-- <span style="display: inline-block; background: #ffe4ec; color: #d72660; padding: 8px 16px; border-radius: 8px; font-weight: 500; margin-top: 8px;">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <b>Note:</b> Not intended to replace professional mental health services.
+                </span> -->
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/baymax_psy/',
+                  '_blank',
+                )
+              "
+            >
+              Prat med Baymax!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Stor data Analyse Case</h1>
+            <h4>2025</h4>
+            <img src="res/work9v2.png" alt="Image of project" />
+            <p>
+              Dette er en case-oppgave jeg gjorde til et teknisk intervju.
+              Oppgaven gikk ut på å analysere et datasett med 100 000 rader og
+              10 kolonner, der jeg skulle finne mønstre og innsikter i dataene.
+              Jeg skulle analysere og presentere det viktigste på en måte som
+              var enkel for brukeren å forstå. Jeg brukte Angular og Typescript
+              for å lage nettapplikasjonen. Løsningen inneholder et dashboard
+              med ulike komponenter, blant annet en interaktiv tabell, flere
+              typer grafer og et kart for å visualisere dataene.
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/big_data_case/',
+                  '_blank',
+                )
+              "
+            >
+              Prøv den ut!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Gjøreliste</h1>
+            <h4>2025</h4>
+            <img src="res/work7.png" alt="Image of project" />
+            <p>
+              En enkel gjøreliste laget med React der du kan skrive inn og legge
+              til oppgaver. Når en oppgave er fullført kan du slette den. Ikke
+              bekymre deg, oppgavene lagres i lokal lagring (localStorage) slik
+              at de er tilgjengelige ved ditt neste besøk!
+            </p>
+
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/todo_list/',
+                  '_blank',
+                )
+              "
+            >
+              Sjekk det ut!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Threads of Life</h1>
+            <h4>2023</h4>
+            <img src="res/work6v2.png" alt="Image of project" />
+            <p>
+              Promosjonsplakat for en interaktiv installasjon fra et
+              gruppeprosjekt i IN5120 - Tangible Interaction. Her lagde vi et
+              interaktivt og utforskbart miljø ved hjelp av flere tilkoblede
+              Arduinos, som simulerte forbindelsene mellom sopper i en ekte
+              skog.
+            </p>
+
+            <button style="display: none" class="buttonPink" onclick="">
+              Page not made yet!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Glassic Melodies</h1>
+            <h4>2023</h4>
+            <img src="res/work5.JPG" alt="Image of project" />
+            <p>
+              En interaktiv installasjon fra et gruppeprosjekt i IN5120 -
+              Tangible Interaction, der Arduino og Ableton brukes til å spille
+              musikk gjennom berøring av et vinglass. Installasjonen simulerer
+              resonanslyden i from av musikk som oppstår når du glir fingeren
+              over glassets kant, hvor musikkens tempo endrer seg basert på hvor
+              raskt du spiller på glasset.
+            </p>
+            <button style="display: none" class="buttonPink" onclick="">
+              Page not made yet!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>JaktApp</h1>
+            <h4>2021</h4>
+            <img src="res/work3.png" alt="Image of project" />
+            <p>
+              I dette prosjektet hadde vi som mål å utvikle en
+              Android-applikasjon som hjelper jegere med å gjennomføre en
+              vellykket jakt, ved å bruke API-er fra Meteorologisk institutt og
+              Google Maps. Prosjektet ble gjort som en del av IN2000 Software
+              Engineering, og appen vant pris for årets beste app. Applikasjonen
+              viser et kart med brukerens posisjon, værmeldinger og farevarsler.
+              I tillegg har den en funksjon for å spille av ulike lokkelyder,
+              spilt inn med ekte jaktinstrumenter, for å lokke dyr innenfor
+              skuddhold.
+            </p>
+            <button style="display: none" class="buttonPink">
+              Page not yet made!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Ergon</h1>
+            <h4>2022</h4>
+            <img src="res/work2.png" alt="Image of project" />
+            <p>
+              Dette prosjektet tar for seg utfordringene unge voksne møter når
+              de sitter lange dager foran PC-en. Løsningen består av et smart
+              stoltrekk, «Ergotrekk», som oppdager dårlig sittestilling med
+              innebygde trykksensorer. Når brukeren synker sammen eller sitter
+              feil, vibrerer trekket lett for å minne dem på å rette seg opp.
+              Med «Dock»-en kan brukeren tilpasse produktet etter behov, for
+              eksempel skru det av i møter. Dock-en viser også en holdningsscore
+              ved slutten av arbeidsdagen. Løsningen gjør det enkelt for unge
+              voksne å opprettholde god ergonomi gjennom dagen uten å måtte
+              tenke så mye over det, og bidrar til både bedre komfort og bedre
+              fokus.
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://www.uio.no/studier/emner/matnat/ifi/IN1060/v22/prosjekter-var-2022/ergon/',
+                  '_blank',
+                )
+              "
+            >
+              Les mer på UiO sin side!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Interra</h1>
+            <h4>2020</h4>
+            <img src="res/work1.png" alt="Image of project" />
+            <p>
+              Dette prosjektet handler om å hjelpe unge voksne mellom 20 og 30
+              år med å bli mer miljøbevisste i hverdagen. Ved å gi tilpasset
+              informasjon og konkrete råd knyttet til daglige gjøremål, er målet
+              å motivere målgruppen til å ta i bruk mer bærekraftige vaner. Med
+              en brukersentrert tilnærming kartlegger prosjektet hva som hindrer
+              folk i å handle mer bærekraftig, og presenterer praktiske
+              løsninger som er enkle å få inn i rutinen. Målet er å gjøre
+              miljøvennlige handlinger til en naturlig del av hverdagen, ikke
+              bare noe man gjør av og til. På den måten bidrar det til en
+              grønnere hverdag og en grønnere planet.
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://www.uio.no/studier/emner/matnat/ifi/IN1060/v20/prosjekter-20/interra/',
+                  '_blank',
+                )
+              "
+            >
+              Les mer på UiO sin side!
+            </button>
+          </div>
+          <div class="tile">
+            <h1>Walleyway Spill</h1>
+            <h4>2019</h4>
+            <img src="res/work8.png" alt="Image of project" />
+            <p>
+              På videregående, i faget «Informasjonsteknologi 2», fikk vi i
+              oppgave å lage et spill kun ved hjelp av JavaScript, HTML og CSS.
+              Jeg laget en ny versjon av det klassiske Walleyway-spillet, som
+              først kom på Gameboy, der du styrer en paddle for å sprette en
+              ball og knuse blokker. Merk at spillet ble laget med tanke på
+              svakere maskinvare, så det kan gå litt fortere på moderne enheter.
+              Kanskje du er klar for utfordringen?
+            </p>
+            <button
+              class="buttonPink"
+              onclick="
+                window.open(
+                  'https://danielfaour.github.io/ValleyWayGame/',
+                  '_blank',
+                )
+              "
+            >
+              Spill på GitHub Pages!
+            </button>
+          </div>
+          <!-- <div class="tile">
+            <h1>WIP</h1>
+            <img src="res/stockphoto.jpg" alt="Image of project" />
+            <p>stay tuned, i will implement more of my projects</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script/nav.js"></script>
+    <script src="script/project_filters.js"></script>
+    <script src="script/project_cards.js"></script>
+
+    <footer>
+      <p>
+        Jobbe sammen?
+        <a href="mailto:daniea1602@gmail.com">Send meg en e-post!</a>
+        <br /><br />
+        Copyright © 2026 Daniel Faour
+      </p>
+    </footer>
+
+    <script src="script/fadein.js"></script>
   </body>
 </html>
