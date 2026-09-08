@@ -2,6 +2,7 @@
   "name": "daniel-faour-portfolio",
   "private": true,
   "version": "2.0.0",
+  "packageManager": "pnpm@11.19.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -23,7 +23,7 @@ export default function Layout({ children }) {
           <nav className={`site-nav${open ? " is-open" : ""}`} aria-label="Primary navigation">
             <NavLink className={navClass} to="/" end>{text.nav.home}</NavLink>
             <NavLink className={navClass} to="/work">{text.nav.work}</NavLink>
-            <NavLink className={navClass} to="/cv">{text.nav.cv}</NavLink>
+            <NavLink className={navClass} to="/cv/">{text.nav.cv}</NavLink>
             <button
               className="language-button"
               type="button"

@@ -46,6 +46,7 @@ export const copy = {
     project: {
       back: "Tilbake til prosjekter",
       overview: "Kort fortalt",
+      view: "Se prosjekt",
       challenge: "Utgangspunkt",
       process: "Slik jobbet jeg",
       result: "Resultat og læring",
@@ -123,6 +124,7 @@ export const copy = {
     project: {
       back: "Back to work",
       overview: "In brief",
+      view: "View project",
       challenge: "Starting point",
       process: "How I approached it",
       result: "Outcome and learning",
