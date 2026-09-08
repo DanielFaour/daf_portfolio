@@ -43,7 +43,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/work" element={<WorkPage />} />
           <Route path="/project/:slug" element={<ProjectPage />} />
-          <Route path="/cv/*" element={<CvPage />} />
+          <Route path="/cv" element={<CvPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

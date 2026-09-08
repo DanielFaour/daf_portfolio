@@ -27,7 +27,7 @@ export default function ProjectCard({ project, featured = false }) {
         <h3><Link to={`/project/${project.slug}`}>{localise(project.title, language)}</Link></h3>
         <p>{localise(project.summary, language)}</p>
         <Link className="text-link" to={`/project/${project.slug}`}>
-          {text.project.view}<ArrowUpRight size={17} aria-hidden="true" />
+          {text.project.overview}<ArrowUpRight size={17} aria-hidden="true" />
         </Link>
       </div>
     </article>

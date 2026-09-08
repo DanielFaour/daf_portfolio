@@ -26,7 +26,7 @@ export default function HomePage() {
             <Link className="button button-primary" to="/work">
               {text.hero.primary}<ArrowRight size={18} aria-hidden="true" />
             </Link>
-            <Link className="button button-secondary" to="/cv/">{text.hero.secondary}</Link>
+            <Link className="button button-secondary" to="/cv">{text.hero.secondary}</Link>
           </div>
         </div>
         <div className="hero-index page-width" aria-hidden="true">

@@ -31,7 +31,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  overflow-x: hidden;
   background: var(--bg);
   color: var(--ink);
 }
@@ -1394,7 +1393,7 @@ h3 {
   }
 
   .hero-content {
-    min-height: min(760px, calc(100svh - 112px));
+    min-height: calc(100svh - 112px);
     padding-top: 68px;
     padding-bottom: 130px;
   }
@@ -1500,8 +1499,7 @@ h3 {
   }
 
   .case-heading h1 {
-    font-size: clamp(2.55rem, 12vw, 4rem);
-    overflow-wrap: anywhere;
+    font-size: clamp(3rem, 16vw, 5rem);
   }
 
   .case-actions {
@@ -1623,13 +1621,6 @@ h3 {
 
   .pdf-toolbar strong {
     font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .hero-portrait {
-    right: -12%;
-    width: 84vw;
   }
 }
 
