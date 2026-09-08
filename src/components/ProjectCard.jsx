@@ -9,6 +9,13 @@ export default function ProjectCard({ project, featured = false }) {
 
   return (
     <article className={`project-card accent-${project.accent}${featured ? " is-featured" : ""}`}>
+      <div className="project-card-header">
+        <h3><Link to={`/project/${project.slug}`}>{localise(project.title, language)}</Link></h3>
+        <div className="project-meta">
+          <span>{localise(project.category, language)}</span>
+          <time>{project.year}</time>
+        </div>
+      </div>
       <Link className="project-media" to={`/project/${project.slug}`} aria-label={localise(project.title, language)}>
         {project.image ? (
           <img src={project.image} alt="" loading="lazy" />
@@ -20,11 +27,6 @@ export default function ProjectCard({ project, featured = false }) {
         )}
       </Link>
       <div className="project-card-body">
-        <div className="project-meta">
-          <span>{localise(project.category, language)}</span>
-          <time>{project.year}</time>
-        </div>
-        <h3><Link to={`/project/${project.slug}`}>{localise(project.title, language)}</Link></h3>
         <p>{localise(project.summary, language)}</p>
         <Link className="text-link" to={`/project/${project.slug}`}>
           {text.project.view}<ArrowUpRight size={17} aria-hidden="true" />
